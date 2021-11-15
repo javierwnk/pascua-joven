@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        
+        ul {
+            width: 50%;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $white;
+                    font-weight: 700;
+                    transition: all 0.5s;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    color: $primary;
+                }
+            }
+
+        }
+
+
+
+    }
+
+}

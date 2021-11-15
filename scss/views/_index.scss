@@ -1,0 +1,253 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+
+    .ondas {
+        position: absolute;
+        width: 100%;
+        bottom: -5px;
+    }
+
+    .heroContainer {
+        padding-top: 150px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            text-align: center;
+
+            h2 {
+                font-size: 4rem;
+                text-align: left;
+            }
+
+            .timer {
+                padding: 36px 0;
+                font-size: 2.2rem;
+            }
+
+            button {
+                background: transparent;
+                border: 2px solid $white;
+                border-radius: 5px;
+                color: $white;
+                width: 200px;
+                height: 36px;
+                margin: 0 auto;
+                font-size: 1.2rem;
+                transition: all 0.5s;
+            }
+
+            button:hover {
+                cursor: pointer;
+                border: 2px solid $primary;
+                color: $primary;
+            }
+
+        }
+
+        .image {
+            img {
+                animation: float 6s ease-in-out infinite;
+            }
+        }
+
+    }
+
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	25% {
+		transform: translatey(-20px);
+
+	}
+	100% {
+		transform: translatey(0px);
+
+	}
+}
+
+.about, .juego {
+    height: 650px;
+    background: linear-gradient(#FFF 22%, $white 100%);
+    padding: 100px 0px;
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .aboutFlex, .gameFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .image {
+            width: 50%;
+            max-height: 500px;
+
+            img {
+                width: 100%;
+                border: 4px solid $white;
+                border-radius: 12px;
+                box-shadow: 0px 5px 15px rgb(167, 167, 167);
+            }
+        }
+
+        .text {
+            width: 40%;
+            font-size: 1.2rem;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        button {
+            background-color: #C13584;
+            width: 280px;
+            height: 40px;
+            border: 0;
+            border-radius: 5px;
+            margin: 12px auto;
+            font: {
+                size: 1.5rem;
+                weight: bold;
+            }
+            color: white;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: $complementary;
+            color: black;
+        }
+    }
+}
+
+.testimonios {
+    height: 500px;
+    background-color: $primary;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column wrap;
+
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .splide {
+            padding-top: 120px;
+            height: 300px;
+
+            .splide__track {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    
+    }
+
+}
+
+
+.divider {
+    display: flex;
+    width: 100%;
+    top: 0px;
+
+    svg {
+        fill: $white;
+        width: 150%;
+        height: 100%;
+        max-height: 48px;
+    }
+
+}
+
+.divider2 {
+    display: flex;
+    width: 100%;
+    top: 0px;
+
+    svg {
+        fill: $primary;
+        width: 150%;
+        height: 100%;
+        max-height: 48px;
+    }
+}
+
+.spotify {
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/spotify.jpeg');
+    background-position: center top;
+    background-size: cover;
+    color: $white;
+
+
+    .content {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        height: 100%;
+
+        h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 2.3rem;
+        }
+
+        iframe {
+            padding-top: 25px;
+        }
+    
+        p {      
+            padding: 20px 0;  
+            font-size: 1.2rem;
+
+            a {
+            text-align: center;
+            color: $white;
+            text-decoration: none;
+            }
+        }
+    
+        p a:hover {
+            text-decoration: underline;
+        }
+    
+    }
+    
+}
+
+.sectionPJ21 {
+    width: 100vw;
+    height: fit-content;
+}
+
+.sectionPJ21 img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+#lemas {
+    margin-top: 40px;
+}

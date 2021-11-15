@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@font-face {
+  font-family: "PascuaJoven18";
+  src: url("images/fonts/PascuaJoven18.woff2") format("woff2"), url("images/fonts/PascuaJoven18.woff") format("woff"), url("images/fonts/PascuaJoven18.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  display: none;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: transparent;
+}
+header nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f4f7f0;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #81926e;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+footer .socialMedia {
+  width: 300px;
+  margin: 40px auto 0 auto;
+}
+footer .socialMedia ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+footer .socialMedia ul li a {
+  color: black;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+footer .socialMedia ul li a:hover {
+  color: #81926e;
+}
+footer p {
+  padding: 24px 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
+}
+.hero .ondas {
+  position: absolute;
+  width: 100%;
+  bottom: -5px;
+}
+.hero .heroContainer {
+  padding-top: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero .heroContainer .text {
+  display: flex;
+  flex-direction: column;
+  color: #f4f7f0;
+  text-align: center;
+}
+.hero .heroContainer .text h2 {
+  font-size: 4rem;
+  text-align: left;
+}
+.hero .heroContainer .text .timer {
+  padding: 36px 0;
+  font-size: 2.2rem;
+}
+.hero .heroContainer .text button {
+  background: transparent;
+  border: 2px solid #f4f7f0;
+  border-radius: 5px;
+  color: #f4f7f0;
+  width: 200px;
+  height: 36px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+.hero .heroContainer .text button:hover {
+  cursor: pointer;
+  border: 2px solid #81926e;
+  color: #81926e;
+}
+.hero .heroContainer .image img {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  25% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.about, .juego {
+  height: 650px;
+  background: linear-gradient(#FFF 22%, #f4f7f0 100%);
+  padding: 100px 0px;
+}
+.about h2, .juego h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.about .aboutFlex, .about .gameFlex, .juego .aboutFlex, .juego .gameFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .aboutFlex .image, .about .gameFlex .image, .juego .aboutFlex .image, .juego .gameFlex .image {
+  width: 50%;
+  max-height: 500px;
+}
+.about .aboutFlex .image img, .about .gameFlex .image img, .juego .aboutFlex .image img, .juego .gameFlex .image img {
+  width: 100%;
+  border: 4px solid #f4f7f0;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px #a7a7a7;
+}
+.about .aboutFlex .text, .about .gameFlex .text, .juego .aboutFlex .text, .juego .gameFlex .text {
+  width: 40%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.about .aboutFlex button, .about .gameFlex button, .juego .aboutFlex button, .juego .gameFlex button {
+  background-color: #C13584;
+  width: 280px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 12px auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s;
+}
+.about .aboutFlex button:hover, .about .gameFlex button:hover, .juego .aboutFlex button:hover, .juego .gameFlex button:hover {
+  cursor: pointer;
+  background-color: #ffccd2;
+  color: black;
+}
+
+.testimonios {
+  height: 500px;
+  background-color: #81926e;
+}
+.testimonios .content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+}
+.testimonios .content h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.testimonios .content .splide {
+  padding-top: 120px;
+  height: 300px;
+}
+.testimonios .content .splide .splide__track {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.divider {
+  display: flex;
+  width: 100%;
+  top: 0px;
+}
+.divider svg {
+  fill: #f4f7f0;
+  width: 150%;
+  height: 100%;
+  max-height: 48px;
+}
+
+.divider2 {
+  display: flex;
+  width: 100%;
+  top: 0px;
+}
+.divider2 svg {
+  fill: #81926e;
+  width: 150%;
+  height: 100%;
+  max-height: 48px;
+}
+
+.spotify {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
+  background-position: center top;
+  background-size: cover;
+  color: #f4f7f0;
+}
+.spotify .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 100%;
+}
+.spotify .content h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2.3rem;
+}
+.spotify .content iframe {
+  padding-top: 25px;
+}
+.spotify .content p {
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+.spotify .content p a {
+  text-align: center;
+  color: #f4f7f0;
+  text-decoration: none;
+}
+.spotify .content p a:hover {
+  text-decoration: underline;
+}
+
+.sectionPJ21 {
+  width: 100vw;
+  height: fit-content;
+}
+
+.sectionPJ21 img {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+#lemas {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

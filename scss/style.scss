@@ -1,0 +1,30 @@
+// Font 
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@font-face {
+    font-family: "PascuaJoven18";
+
+    src: url('images/fonts/PascuaJoven18.woff2') format('woff2'),
+        url('images/fonts/PascuaJoven18.woff') format('woff'), 
+        url('images/fonts/PascuaJoven18.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+// Base
+@import "base/reset";
+
+// Utilities
+@import "utilities/mixins";
+@import "utilities/colors";
+
+// Layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+
+// Views 
+
+@import "views/index";
