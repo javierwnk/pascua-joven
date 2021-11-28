@@ -1,44 +1,45 @@
 header {
     width: 100%;
-    position: absolute;
-    z-index: 5;
-    background-color: transparent;
+    background: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
 
     nav {
         width: 90%;
         margin: 0 auto;
-        padding: 10px 0px;
-        display: flex;
-        justify-content: space-between;
         
         ul {
-            width: 50%;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
 
             li {
-                display: flex;
-                align-items: center;
+
+                margin: 0 20px;
 
                 a {
-                    display: inline-block;
                     text-decoration: none;
-                    color: $white;
+                    color: $white !important;
                     font-weight: 700;
+                    font-size: 1.1rem;
                     transition: all 0.5s;
                 }
-
+                
                 a:hover {
                     text-decoration: underline;
-                    color: $primary;
+                    color: $primary !important;
                 }
             }
 
         }
 
-
-
     }
 
+}
+
+.dropdown-menu-dark {
+    background: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+}
+
+
+@media all and (min-width: 992px) {
+        #navbarNav {
+            display: flex;
+            justify-content: flex-end;
+        }
 }
