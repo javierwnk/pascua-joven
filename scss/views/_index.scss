@@ -1,76 +1,49 @@
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 650px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/hero.jpeg');;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 
-
-    .heroContainer {
-        padding-top: 150px;
+    .timer {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
 
-        .text {
-            display: flex;
-            flex-direction: column;
+        .count {
+            width: 200px;
             color: $white;
+            font-size: 2rem;
             text-align: center;
 
-            h2 {
-                font-size: 4rem;
-                text-align: left;
-            }
-
-            .timer {
-                padding: 36px 0;
-                font-size: 2.2rem;
-            }
-
-            button {
-                background: transparent;
-                border: 2px solid $white;
-                border-radius: 5px;
-                color: $white;
-                width: 200px;
-                height: 36px;
-                margin: 0 auto;
-                font-size: 1.2rem;
-                transition: all 0.5s;
-            }
-
-            button:hover {
-                cursor: pointer;
-                border: 2px solid $primary;
-                color: $primary;
-            }
-
-        }
-
-        .image {
-            img {
-                animation: float 6s ease-in-out infinite;
+            #dias, #horas, #minutos, #segundos {
+                font-size: 6rem;
+                margin-bottom: 0;
             }
         }
-
     }
 
+    .lema {
+
+        h2 {
+            font-family: "PascuaJoven18";
+            font-size: 6rem;
+            text-align: center;
+            color: $white;   
+            margin-top: 60px;
+            text-shadow: 4px 4px black; 
+        }
+    }
 }
 
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	25% {
-		transform: translatey(-20px);
 
-	}
-	100% {
-		transform: translatey(0px);
-
-	}
-}
-
-.about, .juego {
+.juego {
     height: 650px;
     background: linear-gradient(#FFF 22%, $white 100%);
     padding: 100px 0px;

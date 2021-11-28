@@ -16,6 +16,26 @@ h1 {
   display: none;
 }
 
+.inscriptionBtn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 60px;
+  font-size: 2rem;
+  background: #81926e;
+  color: #f4f7f0;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+
+.inscriptionBtn:hover {
+  color: #81926e;
+  background: #f4f7f0;
+}
+
 header {
   width: 100%;
   background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
@@ -82,93 +102,74 @@ footer p {
 
 .hero {
   width: 100%;
-  height: 100vh;
-}
-.hero .heroContainer {
-  padding-top: 150px;
+  height: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
 }
-.hero .heroContainer .text {
+.hero .timer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.hero .timer .count {
+  width: 200px;
   color: #f4f7f0;
+  font-size: 2rem;
   text-align: center;
 }
-.hero .heroContainer .text h2 {
-  font-size: 4rem;
-  text-align: left;
+.hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
+  font-size: 6rem;
+  margin-bottom: 0;
 }
-.hero .heroContainer .text .timer {
-  padding: 36px 0;
-  font-size: 2.2rem;
-}
-.hero .heroContainer .text button {
-  background: transparent;
-  border: 2px solid #f4f7f0;
-  border-radius: 5px;
+.hero .lema h2 {
+  font-family: "PascuaJoven18";
+  font-size: 6rem;
+  text-align: center;
   color: #f4f7f0;
-  width: 200px;
-  height: 36px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  transition: all 0.5s;
-}
-.hero .heroContainer .text button:hover {
-  cursor: pointer;
-  border: 2px solid #81926e;
-  color: #81926e;
-}
-.hero .heroContainer .image img {
-  animation: float 6s ease-in-out infinite;
+  margin-top: 60px;
+  text-shadow: 4px 4px black;
 }
 
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  25% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-.about, .juego {
+.juego {
   height: 650px;
   background: linear-gradient(#FFF 22%, #f4f7f0 100%);
   padding: 100px 0px;
 }
-.about h2, .juego h2 {
+.juego h2 {
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
 }
-.about .aboutFlex, .about .gameFlex, .juego .aboutFlex, .juego .gameFlex {
+.juego .aboutFlex, .juego .gameFlex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.about .aboutFlex .image, .about .gameFlex .image, .juego .aboutFlex .image, .juego .gameFlex .image {
+.juego .aboutFlex .image, .juego .gameFlex .image {
   width: 50%;
   max-height: 500px;
 }
-.about .aboutFlex .image img, .about .gameFlex .image img, .juego .aboutFlex .image img, .juego .gameFlex .image img {
+.juego .aboutFlex .image img, .juego .gameFlex .image img {
   width: 100%;
   border: 4px solid #f4f7f0;
   border-radius: 12px;
   box-shadow: 0px 5px 15px #a7a7a7;
 }
-.about .aboutFlex .text, .about .gameFlex .text, .juego .aboutFlex .text, .juego .gameFlex .text {
+.juego .aboutFlex .text, .juego .gameFlex .text {
   width: 40%;
   font-size: 1.2rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
-.about .aboutFlex button, .about .gameFlex button, .juego .aboutFlex button, .juego .gameFlex button {
+.juego .aboutFlex button, .juego .gameFlex button {
   background-color: #C13584;
   width: 280px;
   height: 40px;
@@ -180,7 +181,7 @@ footer p {
   color: white;
   transition: all 0.5s;
 }
-.about .aboutFlex button:hover, .about .gameFlex button:hover, .juego .aboutFlex button:hover, .juego .gameFlex button:hover {
+.juego .aboutFlex button:hover, .juego .gameFlex button:hover {
   cursor: pointer;
   background-color: #ffccd2;
   color: black;
