@@ -137,15 +137,73 @@ footer p {
   text-shadow: 4px 4px black;
 }
 
+.donaciones {
+  height: fit-content;
+  padding: 100px 0px;
+}
+.donaciones h2 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+  font-family: "PascuaJoven18";
+}
+.donaciones h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "PascuaJoven18";
+}
+.donaciones .donacionesFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.donaciones .donacionesFlex .image {
+  width: 50%;
+  max-height: 500px;
+}
+.donaciones .donacionesFlex .image .carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease-out !important;
+}
+.donaciones .donacionesFlex .image img {
+  width: 100%;
+  border: 4px solid #f4f7f0;
+  border-radius: 12px;
+}
+.donaciones .donacionesFlex .text {
+  width: 40%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.donaciones .donacionesFlex button {
+  background-color: black;
+  width: 280px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 12px auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: all 0.2s;
+}
+.donaciones .donacionesFlex button:hover {
+  cursor: pointer;
+  background-color: #ffccd2;
+  color: black;
+}
+
 .juego {
   height: 650px;
-  background: linear-gradient(#FFF 22%, #f4f7f0 100%);
   padding: 100px 0px;
 }
 .juego h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 900;
+  font-family: "PascuaJoven18";
 }
 .juego .aboutFlex, .juego .gameFlex {
   display: flex;
@@ -181,9 +239,16 @@ footer p {
   color: white;
   transition: all 0.5s;
 }
+.juego .aboutFlex button a, .juego .gameFlex button a {
+  color: white;
+  text-decoration: none;
+}
 .juego .aboutFlex button:hover, .juego .gameFlex button:hover {
   cursor: pointer;
   background-color: #ffccd2;
+  color: black;
+}
+.juego .aboutFlex button:hover a, .juego .gameFlex button:hover a {
   color: black;
 }
 
@@ -283,6 +348,48 @@ footer p {
   text-decoration: underline;
 }
 
+.inscripcionesCirculos {
+  text-align: center;
+  padding: 50px 0;
+  background: #81926e;
+  color: #f4f7f0;
+}
+.inscripcionesCirculos h2 {
+  font-family: "PascuaJoven18";
+  font-weight: 400;
+  font-size: 5rem;
+}
+.inscripcionesCirculos p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.circleSection {
+  height: fit-content;
+  padding: 100px 0 0 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.circleSection .circleCard {
+  width: 250px;
+  height: fit-content;
+  text-align: center;
+}
+.circleSection .circleCard .circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+.circleSection .circleCard #imagen1 {
+  background: url(../../images/donaciones/7.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+.circleSection .circleCard p {
+  margin-top: 20px;
+}
+
 .sectionPJ21 {
   width: 100vw;
   height: fit-content;
@@ -293,10 +400,6 @@ footer p {
   width: 100vw;
   height: auto;
   margin: 0 auto;
-}
-
-#lemas {
-  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
