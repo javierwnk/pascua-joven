@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "PascuaJoven18";
   src: url("images/fonts/PascuaJoven18.woff2") format("woff2"), url("images/fonts/PascuaJoven18.woff") format("woff"), url("images/fonts/PascuaJoven18.ttf") format("ttf");
@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -188,84 +188,98 @@ footer p {
 }
 
 .testimonios {
-  height: 500px;
-  background-color: #81926e;
+  height: fit-content;
+  background-color: #f4f7f0;
+  padding: 50px 0px;
 }
 .testimonios .content {
   display: flex;
   justify-content: space-between;
   flex-flow: column wrap;
+  color: black;
 }
 .testimonios .content h2 {
   text-align: center;
-  padding-top: 20px;
   font-size: 3rem;
   font-weight: 900;
 }
 .testimonios .content .splide {
-  padding-top: 120px;
-  height: 300px;
+  padding: 40px 0px;
+  height: fit-content;
 }
 .testimonios .content .splide .splide__track {
   width: 90%;
   margin: 0 auto;
 }
+.testimonios .content .rol {
+  font-weight: bold;
+}
+.testimonios .content .name {
+  font-style: italic;
+}
 
-.divider {
+.redesContainer {
   display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 50px;
+}
+.redesContainer h2 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.redesContainer ul {
   width: 100%;
-  top: 0px;
+  margin: 0;
+  padding: 0;
 }
-.divider svg {
-  fill: #f4f7f0;
-  width: 150%;
-  height: 100%;
-  max-height: 48px;
+.redesContainer ul li {
+  display: inline-block;
+  font-family: "PascuaJoven18";
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0px 5px;
 }
-
-.divider2 {
-  display: flex;
-  width: 100%;
-  top: 0px;
+.redesContainer ul li.option:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
 }
-.divider2 svg {
-  fill: #81926e;
-  width: 150%;
-  height: 100%;
-  max-height: 48px;
-}
-
-.spotify {
+.redesContainer .redesContent {
   height: 600px;
+  width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
   background-position: center top;
   background-size: cover;
   color: #f4f7f0;
+  margin-top: 20px;
 }
-.spotify .content {
+.redesContainer .redesContent .content {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   height: 100%;
 }
-.spotify .content h2 {
+.redesContainer .redesContent .content h3 {
   text-align: center;
   padding-top: 30px;
   font-size: 2.3rem;
 }
-.spotify .content iframe {
+.redesContainer .redesContent .content iframe {
   padding-top: 25px;
 }
-.spotify .content p {
+.redesContainer .redesContent .content p {
   padding: 20px 0;
   font-size: 1.2rem;
 }
-.spotify .content p a {
+.redesContainer .redesContent .content p a {
   text-align: center;
   color: #f4f7f0;
   text-decoration: none;
 }
-.spotify .content p a:hover {
+.redesContainer .redesContent .content p a:hover {
   text-decoration: underline;
 }
 
