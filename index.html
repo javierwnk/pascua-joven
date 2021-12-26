@@ -19,7 +19,7 @@
         <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logobco.svg" alt="Logo Pascua Joven Morón" width="50" height="50">
+                    <img src="images/logo.svg" id="logo" alt="Logo Pascua Joven Morón" width="50" height="50">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,7 +41,7 @@
                                 Recursos
                             </a>
                             <!-- Modificar dropdown-menu-dark por el color correspondiente -->
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Loremp</a></li>
                                 <li><a class="dropdown-item" href="#">Loremp</a></li>
                                 <li><a class="dropdown-item" href="#">Lorempe</a></li>
@@ -69,6 +69,10 @@
 
         <div class="hero">
 
+            <div class="title">
+                <h1>PASCUA JOVEN 2022</h1>
+            </div>
+
             <div class="timer" id="timer">
                 <div class="count">
                     <p id="dias"></p>
@@ -89,104 +93,143 @@
             </div>
 
             <div class="lema">
-                <h1>Pascua Joven Morón</h1>
-                <h2>Confía en mí, anímate a soñar</h2>
-            </div>
-
-            <div>
-                <a href="#" class="inscriptionBtn">Inscribirse</a>
+                <h2>“Confiá en mí, animate a soñar”</h2>
             </div>
 
 
         </div>
 
 
+        <div class="inscripcionesCirculos">
+
+            <h2>¿TE GUSTARÍA SER PARTE? ¡INSCRIBITE!</h2>
+            <p>Seleccioná tu rol para hacerlo</p>
+
+            <div class="circleSection">
+
+                <!-- TODO: Ver tema Vectores -->
+
+                <div class="circleCard">
+                    <img src="./images/icons/web_Participante Presencial.svg" alt="Participante Presencial">
+                    <p>PARTICIPANTE</p>
+                    <a href="#">Inscribirse</a>
+                </div>
+
+                <div class="circleCard">
+                    <img src="./images/icons/web_Participante Virtual.svg" alt="Participante Virtual">
+                    <p>PARTICIPANTE VIRTUAL</p>
+                    <a href="#">Inscribirse</a>
+
+                </div>
+    
+                <div class="circleCard">
+                    <img src="./images/icons/web_Coordi Grupito.svg" alt="Coordi Grupito">
+                    <p>COORDINADOR DE GRUPITO</p>
+                    <a href="#">Inscribirse</a>
+
+                </div>
+    
+                <div class="circleCard">
+                    <img src="./images/icons/web_Servidores.svg" alt="Servidores">
+                    <p>SERVIDOR</p>
+                    <a href="#">Inscribirse</a>
+
+                </div>
+
+                <div class="circleCard">
+                    <img src="./images/icons/web_Acompañante.svg" alt="Acompañante">
+                    <p>ACOMPAÑANTE</p>
+                    <a href="#">Inscribirse</a>
+
+                </div>
+
+    
+            </div>
+    
+        </div>
+
+
         <div class="testimonios">
 
             <div class="content">
-                <h2>Pascua Joven por ... </h2>
+                <h2>PASCUA JOVEN POR ... </h2>
                 <div class="container splide">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <p class="rol">Coordinador de grupito</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
-                                    expedita
-                                    odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
-                                    Voluptas
-                                    vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
-                                    necessitatibus
-                                    accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
-                                    cumque
-                                    sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
-                                    consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
-                                    optio
-                                    repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
-                                    voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
-                                    labore
-                                    aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
-                                <p class="name">- Pepito Gomez</p>
+                                <div class="splide__image">
+                                    <img src="./images/image26.jpeg">
+                                </div>
+                                <div class="splide__text">
+                                    <p class="rol">Coordinador de grupito</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
+                                        expedita
+                                        odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
+                                        Voluptas
+                                        vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
+                                        necessitatibus
+                                        accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
+                                        cumque
+                                        sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
+                                        consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
+                                        optio
+                                        repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
+                                        voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
+                                        labore
+                                        aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
+                                    <p class="name">- Pepito Gomez</p>
+                                </div>
                             </li>
                             <li class="splide__slide">
-                                <p class="rol">Servidora</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
-                                    expedita
-                                    odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
-                                    Voluptas
-                                    vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
-                                    necessitatibus
-                                    accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
-                                    cumque
-                                    sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
-                                    consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
-                                    optio
-                                    repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
-                                    voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
-                                    labore
-                                    aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
-                                <p class="name">- Pepita Gomez</p>
+                                <div class="splide__image">
+                                    <img src="./images/image26.jpeg">
+                                </div>
+                                <div class="splide__text">
+                                    <p class="rol">Coordinador de grupito</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
+                                        expedita
+                                        odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
+                                        Voluptas
+                                        vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
+                                        necessitatibus
+                                        accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
+                                        cumque
+                                        sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
+                                        consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
+                                        optio
+                                        repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
+                                        voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
+                                        labore
+                                        aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
+                                    <p class="name">- Pepito Gomez</p>
+                                </div>
                             </li>
                             <li class="splide__slide">
-                                <p class="rol">Participante</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
-                                    expedita
-                                    odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
-                                    Voluptas
-                                    vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
-                                    necessitatibus
-                                    accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
-                                    cumque
-                                    sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
-                                    consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
-                                    optio
-                                    repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
-                                    voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
-                                    labore
-                                    aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
-                                <p class="name">- Pepito Gomez Segundo</p>
-                            </li>
-                            <li class="splide__slide">
-                                <p class="rol">Equipo</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
-                                    expedita
-                                    odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
-                                    Voluptas
-                                    vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
-                                    necessitatibus
-                                    accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
-                                    cumque
-                                    sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
-                                    consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
-                                    optio
-                                    repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
-                                    voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
-                                    labore
-                                    aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
-                                <p class="name">- Pepita Gomez Segunda</p>
+                                <div class="splide__image">
+                                    <img src="./images/image26.jpeg">
+                                </div>
+                                <div class="splide__text">
+                                    <p class="rol">Coordinador de grupito</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
+                                        expedita
+                                        odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
+                                        Voluptas
+                                        vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
+                                        necessitatibus
+                                        accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
+                                        cumque
+                                        sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
+                                        consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur accusamus
+                                        optio
+                                        repudiandae inventore doloribus, blanditiis harum laborum voluptatibus placeat ullam
+                                        voluptas cum veniam molestiae eaque. Pariatur cupiditate, consequuntur blanditiis
+                                        labore
+                                        aut itaque totam tempora excepturi fugiat? Et, delectus quidem.</p>
+                                    <p class="name">- Pepito Gomez</p>
+                                </div>
                             </li>
 
                         </ul>
@@ -195,36 +238,6 @@
             </div>
 
         </div>
-
-        <div class="inscripcionesCirculos">
-
-            <h2>¿Te gustaría ser parte?</h2>
-            <p>Selecciona tu rol para inscribirte</p>
-
-            <div class="circleSection">
-
-                <div class="circleCard">
-                    <div class="circle" id="imagen1">
-                    </div>
-                    <p>PARTICIPANTE</p>
-                </div>
-    
-                <div class="circleCard">
-                    <div class="circle" id="imagen1">
-                    </div>
-                    <p>COORDI DE GRUPITO</p>
-                </div>
-    
-                <div class="circleCard">
-                    <div class="circle" id="imagen1">
-                    </div>
-                    <p>SERVIDOR</p>
-                </div>
-    
-            </div>
-    
-        </div>
-
 
 
         <div class="donaciones">
@@ -242,22 +255,22 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="./images/donaciones/1.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/3.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/4.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/5.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/6.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
 
                         </div>
@@ -328,7 +341,7 @@
             <div class="container gameFlex">
                 <div class="text">
 
-                    <h2>Jugá con nosotros</h2>
+                    <h2>JUGÁ CON NOSOTROS</h2>
 
                     <button><a href="">Ir al juego</a></button>
 

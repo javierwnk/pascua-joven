@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+    background: $white;
 
     nav {
         width: 90%;
@@ -14,15 +14,15 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: $white !important;
-                    font-weight: 700;
+                    color: $primary !important;
+                    font-weight: 400;
                     font-size: 1.1rem;
                     transition: all 0.5s;
                 }
                 
                 a:hover {
                     text-decoration: underline;
-                    color: $primary !important;
+                    font-weight: 700;
                 }
             }
 
@@ -32,9 +32,6 @@ header {
 
 }
 
-.dropdown-menu-dark {
-    background: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
-}
 
 
 @media all and (min-width: 992px) {

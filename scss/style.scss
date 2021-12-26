@@ -5,9 +5,19 @@
 @font-face {
     font-family: "PascuaJoven18";
 
-    src: url('images/fonts/PascuaJoven18.woff2') format('woff2'),
-        url('images/fonts/PascuaJoven18.woff') format('woff'), 
-        url('images/fonts/PascuaJoven18.ttf') format('ttf');
+    src: url('../images/fonts/PascuaJoven18.woff2') format('woff2'),
+        url('../images/fonts/PascuaJoven18.woff') format('woff'), 
+        url('../images/fonts/PascuaJoven18.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "MandelaScript";
+
+    src: url('../images/fonts/MandelaScriptPersonalUse.woff2') format('woff2'),
+        url('../images/fonts/MandelaScriptPersonalUse.woff') format('woff'), 
+        url('../images/fonts/MandelaScriptPersonalUse.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
   }
@@ -21,6 +31,7 @@
 
 // Components 
 @import "components/buttons";
+@import "components/slideTestimonios";
 
 
 // Layout

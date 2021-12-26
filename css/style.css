@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "PascuaJoven18";
-  src: url("images/fonts/PascuaJoven18.woff2") format("woff2"), url("images/fonts/PascuaJoven18.woff") format("woff"), url("images/fonts/PascuaJoven18.ttf") format("ttf");
+  src: url("../images/fonts/PascuaJoven18.woff2") format("woff2"), url("../images/fonts/PascuaJoven18.woff") format("woff"), url("../images/fonts/PascuaJoven18.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MandelaScript";
+  src: url("../images/fonts/MandelaScriptPersonalUse.woff2") format("woff2"), url("../images/fonts/MandelaScriptPersonalUse.woff") format("woff"), url("../images/fonts/MandelaScriptPersonalUse.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,18 +18,14 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  display: none;
-}
-
 .inscriptionBtn {
   display: flex;
   align-items: center;
   width: fit-content;
   height: 60px;
   font-size: 2rem;
-  background: #81926e;
-  color: #f4f7f0;
+  background: #12878B;
+  color: #FFF;
   text-decoration: none;
   padding: 5px 20px;
   border-radius: 5px;
@@ -32,13 +34,32 @@ h1 {
 }
 
 .inscriptionBtn:hover {
-  color: #81926e;
-  background: #f4f7f0;
+  color: #12878B;
+  background: #FFF;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: space-between;
+}
+.splide__slide .splide__image img {
+  max-width: 400px;
+  margin-left: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px #a7a7a7;
+}
+.splide__slide .splide__text {
+  display: flex;
+  flex-flow: column;
+  margin-left: 40px;
+}
+.splide__slide .splide__text p:first-child {
+  font-size: 1.2rem;
 }
 
 header {
   width: 100%;
-  background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
+  background: #FFF;
 }
 header nav {
   width: 90%;
@@ -49,18 +70,14 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #f4f7f0 !important;
-  font-weight: 700;
+  color: #12878B !important;
+  font-weight: 400;
   font-size: 1.1rem;
   transition: all 0.5s;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: #81926e !important;
-}
-
-.dropdown-menu-dark {
-  background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
+  font-weight: 700;
 }
 
 @media all and (min-width: 992px) {
@@ -89,12 +106,12 @@ footer .socialMedia ul {
   justify-content: space-between;
 }
 footer .socialMedia ul li a {
-  color: black;
+  color: #3C3C3C;
   font-size: 2rem;
   transition: all 0.5s;
 }
 footer .socialMedia ul li a:hover {
-  color: #81926e;
+  color: #12878B;
 }
 footer p {
   padding: 24px 0;
@@ -102,8 +119,8 @@ footer p {
 
 .hero {
   width: 100%;
-  height: 650px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero.jpeg");
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -115,33 +132,42 @@ footer p {
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 20px 60px;
+  border: 4px solid #D1E872;
+  border-radius: 20px;
 }
 .hero .timer .count {
-  width: 200px;
-  color: #f4f7f0;
-  font-size: 2rem;
+  width: 220px;
+  color: #FFF;
+  font-size: 1.5rem;
   text-align: center;
 }
 .hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
-  font-size: 6rem;
+  font-size: 8rem;
+  font-weight: 900;
   margin-bottom: 0;
 }
-.hero .lema h2 {
-  font-family: "PascuaJoven18";
+.hero .lema h2, .hero .title h2, .hero .lema h1, .hero .title h1 {
+  font-family: "MandelaScript";
   font-size: 6rem;
   text-align: center;
-  color: #f4f7f0;
+  color: #FFF;
   margin-top: 60px;
-  text-shadow: 4px 4px black;
+}
+.hero .lema h1, .hero .title h1 {
+  margin-top: 0;
+  font-size: 4rem;
+}
+.hero .title h2, .hero .title h1 {
+  font-size: 4rem;
+  font-family: "PascuaJoven18";
 }
 
 .donaciones {
   height: fit-content;
   padding: 100px 0px;
 }
-.donaciones h2 {
+.donaciones h2, .donaciones .hero .lema h1, .hero .lema .donaciones h1, .donaciones .hero .title h1, .hero .title .donaciones h1 {
   text-align: center;
   font-size: 6rem;
   font-weight: 600;
@@ -157,17 +183,23 @@ footer p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px #a7a7a7;
+  padding: 50px;
+  border-radius: 50px;
 }
 .donaciones .donacionesFlex .image {
   width: 50%;
-  max-height: 500px;
+  max-height: 450px;
 }
 .donaciones .donacionesFlex .image .carousel-item {
   transition: transform 0.5s ease, opacity 0.5s ease-out !important;
 }
 .donaciones .donacionesFlex .image img {
   width: 100%;
-  border: 4px solid #f4f7f0;
+  border: 4px solid #FFF;
   border-radius: 12px;
 }
 .donaciones .donacionesFlex .text {
@@ -178,7 +210,7 @@ footer p {
   align-items: center;
 }
 .donaciones .donacionesFlex button {
-  background-color: black;
+  background-color: #3C3C3C;
   width: 280px;
   height: 40px;
   border: 0;
@@ -191,15 +223,14 @@ footer p {
 }
 .donaciones .donacionesFlex button:hover {
   cursor: pointer;
-  background-color: #ffccd2;
-  color: black;
+  color: #3C3C3C;
 }
 
 .juego {
   height: 650px;
   padding: 100px 0px;
 }
-.juego h2 {
+.juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
   text-align: center;
   font-size: 5rem;
   font-weight: 900;
@@ -216,7 +247,7 @@ footer p {
 }
 .juego .aboutFlex .image img, .juego .gameFlex .image img {
   width: 100%;
-  border: 4px solid #f4f7f0;
+  border: 4px solid #FFF;
   border-radius: 12px;
   box-shadow: 0px 5px 15px #a7a7a7;
 }
@@ -245,28 +276,28 @@ footer p {
 }
 .juego .aboutFlex button:hover, .juego .gameFlex button:hover {
   cursor: pointer;
-  background-color: #ffccd2;
-  color: black;
+  color: #3C3C3C;
 }
 .juego .aboutFlex button:hover a, .juego .gameFlex button:hover a {
-  color: black;
+  color: #3C3C3C;
 }
 
 .testimonios {
   height: fit-content;
-  background-color: #f4f7f0;
+  background-color: #FFF;
   padding: 50px 0px;
 }
 .testimonios .content {
   display: flex;
   justify-content: space-between;
   flex-flow: column wrap;
-  color: black;
+  color: #3C3C3C;
 }
-.testimonios .content h2 {
+.testimonios .content h2, .testimonios .content .hero .lema h1, .hero .lema .testimonios .content h1, .testimonios .content .hero .title h1, .hero .title .testimonios .content h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 900;
+  font-family: "PascuaJoven18";
 }
 .testimonios .content .splide {
   padding: 40px 0px;
@@ -289,7 +320,7 @@ footer p {
   align-items: center;
   padding-top: 50px;
 }
-.redesContainer h2 {
+.redesContainer h2, .redesContainer .hero .lema h1, .hero .lema .redesContainer h1, .redesContainer .hero .title h1, .hero .title .redesContainer h1 {
   font-family: "PascuaJoven18";
   font-size: 4rem;
   font-weight: 700;
@@ -308,7 +339,7 @@ footer p {
   padding: 0px 5px;
 }
 .redesContainer ul li.option:hover {
-  background: black;
+  background: #3C3C3C;
   color: white;
   cursor: pointer;
 }
@@ -318,7 +349,7 @@ footer p {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
   background-position: center top;
   background-size: cover;
-  color: #f4f7f0;
+  color: #FFF;
   margin-top: 20px;
 }
 .redesContainer .redesContent .content {
@@ -341,7 +372,7 @@ footer p {
 }
 .redesContainer .redesContent .content p a {
   text-align: center;
-  color: #f4f7f0;
+  color: #FFF;
   text-decoration: none;
 }
 .redesContainer .redesContent .content p a:hover {
@@ -350,23 +381,23 @@ footer p {
 
 .inscripcionesCirculos {
   text-align: center;
-  padding: 50px 0;
-  background: #81926e;
-  color: #f4f7f0;
+  padding: 100px 0 50px 0;
+  background: #FFF;
+  color: #3C3C3C;
 }
-.inscripcionesCirculos h2 {
+.inscripcionesCirculos h2, .inscripcionesCirculos .hero .lema h1, .hero .lema .inscripcionesCirculos h1, .inscripcionesCirculos .hero .title h1, .hero .title .inscripcionesCirculos h1 {
   font-family: "PascuaJoven18";
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 55px;
 }
 .inscripcionesCirculos p {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 .circleSection {
   height: fit-content;
-  padding: 100px 0 0 50px;
+  padding: 10px 0 0 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -375,19 +406,26 @@ footer p {
   width: 250px;
   height: fit-content;
   text-align: center;
-}
-.circleSection .circleCard .circle {
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-}
-.circleSection .circleCard #imagen1 {
-  background: url(../../images/donaciones/7.jpeg);
-  background-size: cover;
-  background-position: top;
+  font-size: 5rem;
 }
 .circleSection .circleCard p {
   margin-top: 20px;
+  font-family: "PascuaJoven18";
+  font-size: 1.7rem;
+}
+.circleSection .circleCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #D1E872;
+  color: #3C3C3C;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0;
 }
 
 .sectionPJ21 {
