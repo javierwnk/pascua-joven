@@ -1,0 +1,41 @@
+#donaciones {
+    background-image: url("../images/headers/donaciones.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.donaciones {
+    @extend .historia;
+    background-image: none;
+
+    h2 {
+        text-align: left;
+    }
+}
+
+.donationsType {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .miniCard {
+        width: 360px;
+        margin: 0 30px;
+
+        text-align: center;
+
+        p {
+            margin-top: 15px;
+            min-height: 200px;
+        }
+    }
+}
+
+.thanks {
+    width: 100%;
+    
+    img {
+        width: 100%;
+    }
+}

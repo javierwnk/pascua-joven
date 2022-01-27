@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 .inscriptionBtn {
@@ -36,6 +35,21 @@
 .inscriptionBtn:hover {
   color: #12878B;
   background: #FFF;
+}
+
+.btnPrimary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #D1E872;
+  color: #3C3C3C;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0;
 }
 
 .splide__slide {
@@ -93,28 +107,55 @@ header nav ul li a:hover {
 
 footer {
   width: 100%;
-  height: 100px;
+  height: 221px;
   text-align: center;
+  background-color: #0B5759;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-content: center;
+  color: #FFF;
 }
-footer .socialMedia {
-  width: 300px;
-  margin: 40px auto 0 auto;
+footer .socialMedia p {
+  text-align: left;
 }
 footer .socialMedia ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 footer .socialMedia ul li a {
-  color: #3C3C3C;
+  color: #FFF;
   font-size: 2rem;
   transition: all 0.5s;
 }
 footer .socialMedia ul li a:hover {
   color: #12878B;
 }
-footer p {
-  padding: 24px 0;
+footer ul {
+  list-style: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 400;
+}
+footer ul li {
+  text-align: center;
+  margin: 5px 0;
+}
+footer ul li:first-child {
+  font-weight: 900;
+}
+
+.subheader {
+  height: 440px;
+  width: 100%;
+}
+.subheader h1 {
+  display: none;
 }
 
 .hero {
@@ -156,7 +197,8 @@ footer p {
 }
 .hero .lema h1, .hero .title h1 {
   margin-top: 0;
-  font-size: 4rem;
+  font-size: 40px;
+  color: #D1E872;
 }
 .hero .title h2, .hero .title h1 {
   font-size: 4rem;
@@ -170,12 +212,12 @@ footer p {
 .donaciones h2, .donaciones .hero .lema h1, .hero .lema .donaciones h1, .donaciones .hero .title h1, .hero .title .donaciones h1 {
   text-align: center;
   font-size: 6rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "PascuaJoven18";
 }
 .donaciones h3 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
   font-family: "PascuaJoven18";
 }
@@ -210,15 +252,13 @@ footer p {
   align-items: center;
 }
 .donaciones .donacionesFlex button {
-  background-color: #3C3C3C;
-  width: 280px;
+  background-color: #D1E872;
+  width: 360px;
   height: 40px;
   border: 0;
   border-radius: 5px;
   margin: 12px auto;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
   transition: all 0.2s;
 }
 .donaciones .donacionesFlex button:hover {
@@ -233,7 +273,6 @@ footer p {
 .juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
   text-align: center;
   font-size: 5rem;
-  font-weight: 900;
   font-family: "PascuaJoven18";
 }
 .juego .aboutFlex, .juego .gameFlex {
@@ -259,19 +298,17 @@ footer p {
   align-items: center;
 }
 .juego .aboutFlex button, .juego .gameFlex button {
-  background-color: #C13584;
+  background-color: #D1E872;
   width: 280px;
   height: 40px;
   border: 0;
   border-radius: 5px;
   margin: 12px auto;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
   transition: all 0.5s;
 }
 .juego .aboutFlex button a, .juego .gameFlex button a {
-  color: white;
+  color: #3C3C3C;
   text-decoration: none;
 }
 .juego .aboutFlex button:hover, .juego .gameFlex button:hover {
@@ -283,38 +320,44 @@ footer p {
 }
 
 .testimonios {
-  height: fit-content;
-  background-color: #FFF;
+  height: 500px;
   padding: 50px 0px;
-}
-.testimonios .content {
+  background-image: url("../../images/final.jpg");
+  background-position: bottom;
+  background-size: cover;
   display: flex;
-  justify-content: space-between;
-  flex-flow: column wrap;
-  color: #3C3C3C;
+  justify-content: flex-end;
+  align-items: center;
 }
-.testimonios .content h2, .testimonios .content .hero .lema h1, .hero .lema .testimonios .content h1, .testimonios .content .hero .title h1, .hero .title .testimonios .content h1 {
-  text-align: center;
-  font-size: 5rem;
-  font-weight: 900;
-  font-family: "PascuaJoven18";
+.testimonios .container {
+  width: 50%;
+  background-color: #12878B;
+  border-radius: 68px 0 0 68px;
 }
-.testimonios .content .splide {
+.testimonios .splide {
   padding: 40px 0px;
   height: fit-content;
+  margin: 0;
+  color: #FFF;
 }
-.testimonios .content .splide .splide__track {
+.testimonios .splide__arrows {
+  display: none;
+}
+.testimonios .splide .splide__track {
   width: 90%;
   margin: 0 auto;
 }
-.testimonios .content .rol {
+.testimonios .rol {
   font-weight: bold;
 }
-.testimonios .content .name {
+.testimonios .name {
   font-style: italic;
 }
 
 .redesContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
+  background-position: center top;
+  background-size: cover;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -325,6 +368,7 @@ footer p {
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
+  color: #FFF;
 }
 .redesContainer ul {
   width: 100%;
@@ -334,21 +378,25 @@ footer p {
 .redesContainer ul li {
   display: inline-block;
   font-family: "PascuaJoven18";
+  text-align: center;
+  width: 170px;
   font-size: 2rem;
   font-weight: 700;
   padding: 0px 5px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 .redesContainer ul li.option:hover {
-  background: #3C3C3C;
-  color: white;
+  background: #D1E872;
+  border: 1px solid #D1E872;
+  color: black;
   cursor: pointer;
 }
 .redesContainer .redesContent {
   height: 600px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
-  background-position: center top;
-  background-size: cover;
   color: #FFF;
   margin-top: 20px;
 }
@@ -395,9 +443,20 @@ footer p {
   font-size: 20px;
 }
 
+.recursos {
+  height: fit-content;
+  padding: 100px 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.recursos h2, .recursos .hero .lema h1, .hero .lema .recursos h1, .recursos .hero .title h1, .hero .title .recursos h1 {
+  font-size: 55px;
+  font-family: "PascuaJoven18";
+  text-align: center;
+}
+
 .circleSection {
   height: fit-content;
-  padding: 10px 0 0 50px;
+  padding: 80px 0 0 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -407,6 +466,9 @@ footer p {
   height: fit-content;
   text-align: center;
   font-size: 5rem;
+}
+.circleSection .circleCard div {
+  height: 140px;
 }
 .circleSection .circleCard p {
   margin-top: 20px;
@@ -429,15 +491,137 @@ footer p {
 }
 
 .sectionPJ21 {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
 }
 
-.sectionPJ21 img {
-  display: block;
-  width: 100vw;
-  height: auto;
+.sectionPJ21 video {
+  width: 100%;
+  height: fit-content;
+}
+
+#nosotros {
+  background-image: url("../images/headers/nosotros.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.historia, .donaciones {
+  width: 100%;
+  padding: 64px 0 0 0;
+  background-image: url("../images/nosotros-background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.historia .content, .donaciones .content {
+  width: 80%;
   margin: 0 auto;
+}
+.historia .content h2, .donaciones .content h2, .historia .content .hero .lema h1, .donaciones .content .hero .lema h1, .hero .lema .historia .content h1, .hero .lema .donaciones .content h1, .historia .content .hero .title h1, .donaciones .content .hero .title h1, .hero .title .historia .content h1, .hero .title .donaciones .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+}
+.historia .content p, .donaciones .content p {
+  color: #1F3031;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.logoInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logoInfo div {
+  max-height: 637px;
+}
+.logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+  text-transform: uppercase;
+}
+.logoInfo div p {
+  line-height: 34.16px;
+  width: 90%;
+}
+.logoInfo div img {
+  max-height: 637px;
+}
+.logoInfo .text {
+  width: 30%;
+}
+
+.recuerdos img {
+  width: 100%;
+}
+.recuerdos .pope {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 64px;
+}
+.recuerdos .pope div {
+  max-height: 440px;
+}
+.recuerdos .pope div img {
+  max-height: 440px;
+}
+.recuerdos .pope div p {
+  line-height: 32.16px;
+}
+.recuerdos .pope .text {
+  width: 30%;
+}
+.recuerdos .videoPope {
+  width: 80%;
+  margin: 64px auto 0 auto;
+}
+.recuerdos .videoPope p {
+  font-size: 2rem;
+}
+.recuerdos .videoPope p:first-child {
+  font-family: "PascuaJoven18";
+  font-size: 5rem;
+  margin: 0;
+  line-height: 40px;
+}
+
+#donaciones {
+  background-image: url("../images/headers/donaciones.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.donaciones {
+  background-image: none;
+}
+.donaciones h2, .donaciones .hero .lema h1, .hero .lema .donaciones h1, .donaciones .hero .title h1, .hero .title .donaciones h1 {
+  text-align: left;
+}
+
+.donationsType {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.donationsType .miniCard {
+  width: 360px;
+  margin: 0 30px;
+  text-align: center;
+}
+.donationsType .miniCard p {
+  margin-top: 15px;
+  min-height: 200px;
+}
+
+.thanks {
+  width: 100%;
+}
+.thanks img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
