@@ -655,4 +655,135 @@ footer ul li:first-child {
   box-shadow: none;
 }
 
+#contacto {
+  background-image: url("../images/headers/contacto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contacto {
+  width: 100%;
+  padding: 64px 0;
+}
+.contacto .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.contacto .content p {
+  text-align: center;
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
+}
+.contacto .content form {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 12px;
+}
+.contacto .content input, .contacto .content textarea {
+  border: 0.5px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+}
+.contacto .content .location {
+  margin-top: 64px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.contacto .content .location p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.contacto .content table {
+  width: 100%;
+  margin-top: 124px;
+  text-align: center;
+}
+.contacto .content table i {
+  color: #0B5759;
+  font-size: 32px;
+  margin: 0 5px;
+}
+.contacto .content table a {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+
+#recursos {
+  background-image: url("../images/headers/recursos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recursos {
+  width: 100%;
+  padding: 64px 0 64px 0;
+  background-image: url("../images/recursos-brackground-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recursos .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.recursos .content .sectionContent {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  padding: 64px;
+  background-color: #FFF;
+}
+.recursos .content .sectionContent img {
+  display: block;
+  margin: 0 auto;
+}
+.recursos .content .sectionContent .options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.recursos .content .sectionContent .options div {
+  margin-top: 32px;
+}
+.recursos .content .sectionContent .options p {
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "PascuaJoven18";
+  text-align: center;
+}
+.recursos .content .sectionContent .options a {
+  width: 200px;
+}
+.recursos .content .sectionContent2 {
+  width: 90%;
+  margin: 124px auto 0 auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  padding: 64px;
+  background-color: #FFF;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.recursos .content .sectionContent2 .image {
+  width: 60%;
+}
+.recursos .content .sectionContent2 .image img {
+  width: 100%;
+}
+.recursos .content .sectionContent2 .textContent {
+  width: 35%;
+  text-align: center;
+}
+.recursos .content .recursosContent {
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=style.css.map */
