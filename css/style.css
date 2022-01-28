@@ -624,4 +624,35 @@ footer ul li:first-child {
   width: 100%;
 }
 
+#faq {
+  background-image: url("../images/headers/faq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.faq {
+  width: 100%;
+  padding: 64px 0;
+}
+.faq .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.faq .content .accordion-item {
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+.faq .content .accordion-button {
+  font-weight: 700;
+}
+.faq .content .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #12878B;
+}
+.faq .content .accordion-button:focus {
+  border-color: white;
+  box-shadow: none;
+}
+
 /*# sourceMappingURL=style.css.map */
