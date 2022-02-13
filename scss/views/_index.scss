@@ -58,7 +58,7 @@
     }
 }
 
-.donaciones {
+.donacionesHome {
     height: fit-content;
     padding: 100px 0px;
 
@@ -357,7 +357,7 @@
     }
 }
 
-.recursos {
+.recursosHome {
 
     height: fit-content;
     padding: 100px 0;
@@ -378,6 +378,10 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+
+        .pointer {
+            cursor: pointer;
+        }
     
         .circleCard {
     
@@ -386,8 +390,35 @@
             text-align: center;
             font-size: 5rem;
 
-            div {
+            .cardLogo {
                 height: 140px;
+            }
+
+            .show {
+                height: 250px;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+            }
+
+            .info {
+
+                background-color: $primary;
+                border-radius: 100%;
+
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    line-height: 18.92px;
+                    font-size: 1rem;
+                    font-family: inherit;
+                    color: $white;
+                }
             }
     
     
@@ -396,6 +427,7 @@
                 font-family: "PascuaJoven18";
                 font-size: 1.7rem;
             }
+
     
             a {
                 display: flex;
@@ -404,13 +436,14 @@
                 font-size: 1.2rem;
                 width: 90%;
                 height: 40px;
-                margin: 0 auto;
+                margin: 12px auto;
                 background-color: $secondary;
                 color: $black;
                 border-radius: 5px;
                 text-decoration: none;
                 line-height: 0;
             }
+
     
     
         }

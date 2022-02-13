@@ -1,0 +1,77 @@
+#galeria {
+    background-image: url("../images/headers/galeria.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galeria {
+
+    width: 100%;
+    padding: 64px 0 64px 0;
+    
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        "h2 h2 h2"
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card9";
+        justify-content: center;
+        align-content: center;
+        row-gap: 75px;
+        column-gap: 121px;
+
+        h2 {
+            font-family: "PascuaJoven18";
+            font-size: 4rem;
+            text-align: center;
+            grid-area: h2;
+        }
+
+        .galleryCard {
+            height: 150px;
+            width: 150px;
+            align-self: center;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    
+}
+
+.semifooter {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 64px 0;
+    background-image: url("../images/galeria/semifooter.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-family: "PascuaJoven18";
+        font-size: 4rem;
+        text-align: center;
+        color: $white;
+    }
+
+    .videos {
+        display: flex;
+        justify-content: space-around;
+        padding: 64px 0;
+
+        iframe {
+            width: 480px;
+            height: 270px;
+        }
+    }
+}

@@ -25,6 +25,7 @@
             color: #1F3031;
             text-align: justify;
             line-height: 28px;
+
         }
 
     }
@@ -52,7 +53,7 @@
             width: 90%;
         }
 
-        img {
+        video {
             max-height: 637px;
         }
     }
@@ -93,10 +94,11 @@
 
     .videoPope {
         width: 80%;
-        margin: 64px auto 0 auto;
+        margin: 64px auto 24px auto;
 
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            font-family: var(--bs-body-font-family);
         }
 
         p:first-child {

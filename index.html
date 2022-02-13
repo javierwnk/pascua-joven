@@ -18,7 +18,7 @@
 
         <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/logo.svg" id="logo" alt="Logo Pascua Joven Morón" width="50" height="50">
                 </a>
 
@@ -30,37 +30,28 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                            <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Donaciones</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Recursos
-                            </a>
-                            <!-- Modificar dropdown-menu-dark por el color correspondiente -->
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Loremp</a></li>
-                                <li><a class="dropdown-item" href="#">Loremp</a></li>
-                                <li><a class="dropdown-item" href="#">Lorempe</a></li>
-                            </ul>
+                            <a class="nav-link" href="donar.html">Donaciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galeria</a>
+                            <a class="nav-link" href="recursos.html">Recursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="preguntas-frecuentes.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inscripciones</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscripciones.html">Inscripciones</a>
                         </li>
                     </ul>
                 </div>
@@ -108,42 +99,20 @@
             <h2>¿TE GUSTARÍA SER PARTE? ¡INSCRIBITE!</h2>
             <p>Seleccioná tu rol para hacerlo</p>
 
-            <div class="circleSection">
+            <div class="circleSection" id="inscripcionesOpciones">
 
                 <div class="circleCard">
-                    <img src="./images/icons/fg_participante.png" alt="Participante Presencial">
-                    <p>PARTICIPANTE</p>
+                    <div class="show" id="participanteCirculo">
+                        <div class="cardLogo">
+                            <img src="./images/icons/fg_participante.png" alt="Participante Presencial">
+                        </div>
+                        <p>PARTICIPANTE</p>    
+                    </div> 
+                    <div class="info" id="infoParticipantes">
+                        <p>Pueden ser participantes aquellos jóvenes que estén cursando sus últimos dos años de colegio: 5to y 6to año de secundaria. </p>
+                    </div>
                     <a href="#">Inscribirse</a>
                 </div>
-
-                <div class="circleCard">
-                    <img src="./images/icons/fg_participante_virtual.png" alt="Participante Virtual">
-                    <p>PARTICIPANTE VIRTUAL</p>
-                    <a href="#">Inscribirse</a>
-
-                </div>
-
-                <div class="circleCard">
-                    <img src="./images/icons/fg_coordi.png" alt="Coordi Grupito">
-                    <p>COORDINADOR DE GRUPITO</p>
-                    <a href="#">Inscribirse</a>
-
-                </div>
-
-                <div class="circleCard">
-                    <img src="./images/icons/fg_servidor.png" alt="Servidores">
-                    <p>SERVIDOR</p>
-                    <a href="#">Inscribirse</a>
-
-                </div>
-
-                <div class="circleCard">
-                    <img src="./images/icons/fg_acompanante.png" alt="Acompañante">
-                    <p>ACOMPAÑANTE</p>
-                    <a href="#">Inscribirse</a>
-
-                </div>
-
 
             </div>
 
@@ -198,7 +167,7 @@
         </div>
 
 
-        <div class="donaciones">
+        <div class="donacionesHome">
             <div class="container donacionesFlex">
                 <div class="text">
 
@@ -266,33 +235,33 @@
         </div>
 
 
-        <div class="recursos">
+        <div class="recursosHome">
 
             <h2>EXPLORÁ NUESTRAS OTRAS SECCIONES</h2>
 
             <div class="circleSection">
-                <div class="circleCard">
+                <div class="circleCard pointer" id="botonRecursos">
                     <div class="circle" id="imagen1">
                         <img src="./images/icons/fg_recursos.png" alt="">
                     </div>
                     <p>RECURSOS</p>
                 </div>
     
-                <div class="circleCard">
+                <div class="circleCard pointer" id="botonFAQ">
                     <div class="circle" id="imagen1">
                         <img src="./images/icons/fg_faq.png" alt="">
                     </div>
                     <p>PREGUNTAS FRECUENTES</p>
                 </div>
     
-                <div class="circleCard">
+                <div class="circleCard pointer" id="botonGaleria">
                     <div class="circle" id="imagen1">
                         <img src="./images/icons/fg_galeria.png" alt="">
                     </div>
                     <p>GALERÍA DE FOTOS</p>
                 </div>
     
-                <div class="circleCard">
+                <div class="circleCard pointer" id="botonHistoria">
                     <div class="circle" id="imagen1">
                         <img src="./images/icons/fg_historia.png" alt="">
                     </div>
@@ -364,8 +333,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src="js/slide/dist/js/splide.min.js"></script>
     <script>  new Splide('.splide').mount();</script>
+    <script src="js/redireccionamientos.js"></script>
+    <script src="js/inscripcionesHover.js"></script>
+
 </body>
 
 </html>

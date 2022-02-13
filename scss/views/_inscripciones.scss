@@ -1,0 +1,99 @@
+#inscripciones {
+    background-image: url("../images/headers/inscripciones.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inscripciones {
+
+    width: 100%;
+    padding: 64px 0 64px 0;
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            font-family: "PascuaJoven18";
+            font-size: 3.12rem;
+        }
+
+        p {
+            color: #1F3031;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+        .opcionesInscripcion {
+            height: fit-content;
+            padding: 80px 0 0 50px;
+            display: flex;
+            flex-flow: row wrap;
+            row-gap: 112px;
+            justify-content: space-around;
+        
+            .circleCard {
+        
+                width: 400px;
+                height: fit-content;
+                text-align: center;
+                font-size: 5rem;
+    
+                div.imagenCard {
+                    height: 140px;
+                }
+
+                div.textoCard {
+                    height: 120px;
+                }        
+        
+                p.tituloInscripcion {
+                    margin: 20px 0 0 0;
+                    font-family: "PascuaJoven18";
+                    font-size: 1.7rem;
+                    text-align: center;
+                    font-weight: 700;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1rem;
+                    margin-top: 5px;
+                    line-height: 25px;
+                }
+
+        
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    width: 90%;
+                    height: 40px;
+                    margin: 0 auto;
+                    background-color: $secondary;
+                    color: $black;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    line-height: 0;
+                }
+        
+        
+            }
+        
+        
+        }
+    
+
+    }
+
+    
+}
+
+.subfooter {
+    width: 100%;
+
+    img {
+        width: 100%
+    };
+}

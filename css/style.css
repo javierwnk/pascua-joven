@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 @font-face {
   font-family: "PascuaJoven18";
   src: url("../images/fonts/PascuaJoven18.woff2") format("woff2"), url("../images/fonts/PascuaJoven18.woff") format("woff"), url("../images/fonts/PascuaJoven18.ttf") format("ttf");
@@ -88,6 +88,7 @@ header nav ul li a {
   font-weight: 400;
   font-size: 1.1rem;
   transition: all 0.5s;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -132,7 +133,7 @@ footer .socialMedia ul li a {
   transition: all 0.5s;
 }
 footer .socialMedia ul li a:hover {
-  color: #12878B;
+  color: #D1E872;
 }
 footer ul {
   list-style: none;
@@ -141,6 +142,10 @@ footer ul a {
   text-decoration: none;
   color: #FFF;
   font-weight: 400;
+  transition: all 0.5s;
+}
+footer ul a:hover {
+  color: #D1E872;
 }
 footer ul li {
   text-align: center;
@@ -205,23 +210,23 @@ footer ul li:first-child {
   font-family: "PascuaJoven18";
 }
 
-.donaciones {
+.donacionesHome {
   height: fit-content;
   padding: 100px 0px;
 }
-.donaciones h2, .donaciones .hero .lema h1, .hero .lema .donaciones h1, .donaciones .hero .title h1, .hero .title .donaciones h1 {
+.donacionesHome h2, .donacionesHome .hero .lema h1, .hero .lema .donacionesHome h1, .donacionesHome .hero .title h1, .hero .title .donacionesHome h1 {
   text-align: center;
   font-size: 6rem;
   font-weight: 400;
   font-family: "PascuaJoven18";
 }
-.donaciones h3 {
+.donacionesHome h3 {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 400;
   font-family: "PascuaJoven18";
 }
-.donaciones .donacionesFlex {
+.donacionesHome .donacionesFlex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,26 +237,26 @@ footer ul li:first-child {
   padding: 50px;
   border-radius: 50px;
 }
-.donaciones .donacionesFlex .image {
+.donacionesHome .donacionesFlex .image {
   width: 50%;
   max-height: 450px;
 }
-.donaciones .donacionesFlex .image .carousel-item {
+.donacionesHome .donacionesFlex .image .carousel-item {
   transition: transform 0.5s ease, opacity 0.5s ease-out !important;
 }
-.donaciones .donacionesFlex .image img {
+.donacionesHome .donacionesFlex .image img {
   width: 100%;
   border: 4px solid #FFF;
   border-radius: 12px;
 }
-.donaciones .donacionesFlex .text {
+.donacionesHome .donacionesFlex .text {
   width: 40%;
   font-size: 1.2rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
-.donaciones .donacionesFlex button {
+.donacionesHome .donacionesFlex button {
   background-color: #D1E872;
   width: 360px;
   height: 40px;
@@ -261,7 +266,7 @@ footer ul li:first-child {
   font-size: 1.5rem;
   transition: all 0.2s;
 }
-.donaciones .donacionesFlex button:hover {
+.donacionesHome .donacionesFlex button:hover {
   cursor: pointer;
   color: #3C3C3C;
 }
@@ -443,12 +448,12 @@ footer ul li:first-child {
   font-size: 20px;
 }
 
-.recursos {
+.recursosHome {
   height: fit-content;
   padding: 100px 0;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
-.recursos h2, .recursos .hero .lema h1, .hero .lema .recursos h1, .recursos .hero .title h1, .hero .title .recursos h1 {
+.recursosHome h2, .recursosHome .hero .lema h1, .hero .lema .recursosHome h1, .recursosHome .hero .title h1, .hero .title .recursosHome h1 {
   font-size: 55px;
   font-family: "PascuaJoven18";
   text-align: center;
@@ -461,14 +466,39 @@ footer ul li:first-child {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+.circleSection .pointer {
+  cursor: pointer;
+}
 .circleSection .circleCard {
   width: 250px;
   height: fit-content;
   text-align: center;
   font-size: 5rem;
 }
-.circleSection .circleCard div {
+.circleSection .circleCard .cardLogo {
   height: 140px;
+}
+.circleSection .circleCard .show {
+  height: 250px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.circleSection .circleCard .info {
+  background-color: #12878B;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleSection .circleCard .info p {
+  line-height: 18.92px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #FFF;
 }
 .circleSection .circleCard p {
   margin-top: 20px;
@@ -482,7 +512,7 @@ footer ul li:first-child {
   font-size: 1.2rem;
   width: 90%;
   height: 40px;
-  margin: 0 auto;
+  margin: 12px auto;
   background-color: #D1E872;
   color: #3C3C3C;
   border-radius: 5px;
@@ -545,7 +575,7 @@ footer ul li:first-child {
   line-height: 34.16px;
   width: 90%;
 }
-.logoInfo div img {
+.logoInfo div video {
   max-height: 637px;
 }
 .logoInfo .text {
@@ -576,10 +606,11 @@ footer ul li:first-child {
 }
 .recuerdos .videoPope {
   width: 80%;
-  margin: 64px auto 0 auto;
+  margin: 64px auto 24px auto;
 }
 .recuerdos .videoPope p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: var(--bs-body-font-family);
 }
 .recuerdos .videoPope p:first-child {
   font-family: "PascuaJoven18";
@@ -784,6 +815,145 @@ footer ul li:first-child {
 }
 .recursos .content .recursosContent {
   flex-direction: row;
+}
+
+#galeria {
+  background-image: url("../images/headers/galeria.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.galeria {
+  width: 100%;
+  padding: 64px 0 64px 0;
+}
+.galeria .content {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "h2 h2 h2" "card1 card2 card3" "card4 card5 card6" "card7 card8 card9";
+  justify-content: center;
+  align-content: center;
+  row-gap: 75px;
+  column-gap: 121px;
+}
+.galeria .content h2, .galeria .content .hero .lema h1, .hero .lema .galeria .content h1, .galeria .content .hero .title h1, .hero .title .galeria .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+  text-align: center;
+  grid-area: h2;
+}
+.galeria .content .galleryCard {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+  cursor: pointer;
+}
+.galeria .content .galleryCard img {
+  width: 100%;
+}
+
+.semifooter {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 64px 0;
+  background-image: url("../images/galeria/semifooter.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+  text-align: center;
+  color: #FFF;
+}
+.semifooter .videos {
+  display: flex;
+  justify-content: space-around;
+  padding: 64px 0;
+}
+.semifooter .videos iframe {
+  width: 480px;
+  height: 270px;
+}
+
+#inscripciones {
+  background-image: url("../images/headers/inscripciones.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inscripciones {
+  width: 100%;
+  padding: 64px 0 64px 0;
+}
+.inscripciones .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.inscripciones .content h2, .inscripciones .content .hero .lema h1, .hero .lema .inscripciones .content h1, .inscripciones .content .hero .title h1, .hero .title .inscripciones .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+}
+.inscripciones .content p {
+  color: #1F3031;
+  text-align: justify;
+  line-height: 28px;
+}
+.inscripciones .content .opcionesInscripcion {
+  height: fit-content;
+  padding: 80px 0 0 50px;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 112px;
+  justify-content: space-around;
+}
+.inscripciones .content .opcionesInscripcion .circleCard {
+  width: 400px;
+  height: fit-content;
+  text-align: center;
+  font-size: 5rem;
+}
+.inscripciones .content .opcionesInscripcion .circleCard div.imagenCard {
+  height: 140px;
+}
+.inscripciones .content .opcionesInscripcion .circleCard div.textoCard {
+  height: 120px;
+}
+.inscripciones .content .opcionesInscripcion .circleCard p.tituloInscripcion {
+  margin: 20px 0 0 0;
+  font-family: "PascuaJoven18";
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 700;
+}
+.inscripciones .content .opcionesInscripcion .circleCard p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5px;
+  line-height: 25px;
+}
+.inscripciones .content .opcionesInscripcion .circleCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #D1E872;
+  color: #3C3C3C;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.subfooter {
+  width: 100%;
+}
+.subfooter img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
