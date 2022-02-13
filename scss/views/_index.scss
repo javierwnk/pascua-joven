@@ -223,10 +223,6 @@
             margin: 0;
             color: $white;
 
-            &__arrows {
-                display: none;
-            }
-
 
             .splide__track {
                 width: 90%;
@@ -246,13 +242,13 @@
 
 }
 
-.redesContainer {
-
+#redesBackground {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/spotify.jpeg');
     background-position: center top;
     background-size: cover;
+}
 
-
+.redesContainer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -451,9 +447,6 @@
     
     }
     
-
-
-
 
 .sectionPJ21 {
     width: 100%;

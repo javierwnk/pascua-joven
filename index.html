@@ -101,19 +101,6 @@
 
             <div class="circleSection" id="inscripcionesOpciones">
 
-                <div class="circleCard">
-                    <div class="show" id="participanteCirculo">
-                        <div class="cardLogo">
-                            <img src="./images/icons/fg_participante.png" alt="Participante Presencial">
-                        </div>
-                        <p>PARTICIPANTE</p>    
-                    </div> 
-                    <div class="info" id="infoParticipantes">
-                        <p>Pueden ser participantes aquellos jóvenes que estén cursando sus últimos dos años de colegio: 5to y 6to año de secundaria. </p>
-                    </div>
-                    <a href="#">Inscribirse</a>
-                </div>
-
             </div>
 
         </div>
@@ -123,7 +110,7 @@
 
             <div class="container splide">
                 <div class="splide__track">
-                    <ul class="splide__list">
+                    <ul class="splide__list" id="testimoniosSlider">
                         <li class="splide__slide">
                             <div class="splide__text">
                                 <p class="rol">Coordinador de grupito</p>
@@ -207,19 +194,19 @@
         </div>
 
 
-        <div class="redesContainer">
+        <div class="redesContainer" id="redesBackground">
 
             <div class="options">
                 <h2>ENCONTRANOS EN</h2>
 
                 <ul>
-                    <li class="option">Spotify</li>
-                    <li class="option">YouTube</li>
-                    <li class="option">Redes Sociales</li>
+                    <li class="option" id="spotify">Spotify</li>
+                    <li class="option" id="youtube">YouTube</li>
+                    <li class="option" id="rrss">Redes Sociales</li>
                 </ul>
             </div>
 
-            <div class="redesContent">
+            <div class="redesContent" id="redesContent">
 
                 <div class="content container">
                     <h3>Escuchá nuestro último album en Spotify</h3>
@@ -334,10 +321,12 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="js/sliderTestimonios.js"></script>
     <script src="js/slide/dist/js/splide.min.js"></script>
     <script>  new Splide('.splide').mount();</script>
     <script src="js/redireccionamientos.js"></script>
     <script src="js/inscripcionesHover.js"></script>
+    <script src="js/rrss.js"></script>
 
 </body>
 

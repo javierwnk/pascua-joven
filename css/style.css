@@ -71,6 +71,10 @@
   font-size: 1.2rem;
 }
 
+.splide__arrow {
+  background: transparent;
+}
+
 header {
   width: 100%;
   background: #FFF;
@@ -345,9 +349,6 @@ footer ul li:first-child {
   margin: 0;
   color: #FFF;
 }
-.testimonios .splide__arrows {
-  display: none;
-}
 .testimonios .splide .splide__track {
   width: 90%;
   margin: 0 auto;
@@ -359,10 +360,13 @@ footer ul li:first-child {
   font-style: italic;
 }
 
-.redesContainer {
+#redesBackground {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
   background-position: center top;
   background-size: cover;
+}
+
+.redesContainer {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -631,6 +635,10 @@ footer ul li:first-child {
 .donaciones h2, .donaciones .hero .lema h1, .hero .lema .donaciones h1, .donaciones .hero .title h1, .hero .title .donaciones h1 {
   text-align: left;
 }
+.donaciones img {
+  display: block;
+  margin: 0 auto;
+}
 
 .donationsType {
   display: flex;
@@ -851,6 +859,19 @@ footer ul li:first-child {
 }
 .galeria .content .galleryCard img {
   width: 100%;
+}
+.galeria .carrusel {
+  width: 70%;
+  margin: 0 auto;
+  display: none;
+}
+.galeria .carrusel p {
+  color: #D1E872;
+  font-weight: 700;
+  width: fit-content;
+}
+.galeria .carrusel p:hover {
+  cursor: pointer;
 }
 
 .semifooter {
