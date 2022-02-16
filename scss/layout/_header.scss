@@ -41,3 +41,29 @@ header {
             justify-content: flex-end;
         }
 }
+
+@media all and (max-width: 1144px) {
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1091px) {
+    header {
+        nav {
+            ul {
+                li {
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+}
