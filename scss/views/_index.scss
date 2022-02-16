@@ -326,6 +326,28 @@
             p a:hover {
                 text-decoration: underline;
             }
+
+            .redes {
+                width: 60%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                margin-top: 124px;
+
+                .cardRedes {
+                    width: 200px;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    row-gap: 64px;
+
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
         
         }
         

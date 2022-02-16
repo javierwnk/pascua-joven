@@ -68,24 +68,33 @@ document.addEventListener("DOMContentLoaded", () => {
 function mostrarPascua(pascua) {
     document.getElementById("contentGallery").style.display = "none"
 
+    let html = ""
 
-    let busqueda = pascuas.find(pj => pj.id == pascua)
+    if(pascua != 20) {
+        let busqueda = pascuas.find(pj => pj.id == pascua)
 
-    let html = ` <div class="carousel-item active">
-                    <img src="${busqueda.ruta}/1${busqueda.format}" class="d-block w-100" alt="...">
+        html = ` <div class="carousel-item active">
+                        <img src="${busqueda.ruta}/1${busqueda.format}" class="d-block w-100" alt="...">
+                    </div>`
+    
+        for(let i = 2; i <= busqueda.cantidad; i++) {
+            
+            html += `<div class="carousel-item">
+            <img src="${busqueda.ruta}/${i}${busqueda.format}" class="d-block w-100" alt="...">
+        </div>`
+        }
+
+
+    
+    } else {
+        html = ` <div class="carousel-item active">
+                    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/vaHOxP9rXC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>`
-
-    for(let i = 2; i <= busqueda.cantidad; i++) {
-        
-        html += `<div class="carousel-item">
-        <img src="${busqueda.ruta}/${i}${busqueda.format}" class="d-block w-100" alt="...">
-    </div>`
     }
+
 
     document.getElementById("imagenesSlider").innerHTML = html
     document.getElementById("carruselGaleria").style.display = "block"
-
-
 
 }
 

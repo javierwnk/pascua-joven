@@ -435,6 +435,24 @@ footer ul li:first-child {
 .redesContainer .redesContent .content p a:hover {
   text-decoration: underline;
 }
+.redesContainer .redesContent .content .redes {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 124px;
+}
+.redesContainer .redesContent .content .redes .cardRedes {
+  width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 64px;
+}
+.redesContainer .redesContent .content .redes .cardRedes img {
+  width: 200px;
+}
 
 .inscripcionesCirculos {
   text-align: center;

@@ -37,6 +37,15 @@ let inscripcionesOpciones = [{
 
 }]
 
+// Variable que setea el tiempo que debe habilitarse la inscripción
+var countDownDate = new Date("Mar 7, 2022 00:00:00").getTime();
+console.log(distance)
+// Get today's date and time
+var now = new Date().getTime();
+
+// Find the distance between now and the count down date
+var distance = countDownDate - now;
+
 $(document).ready(function () {
     let html = ""
     inscripcionesOpciones.forEach(opcion => {
@@ -49,9 +58,17 @@ $(document).ready(function () {
         </div> 
         <div class="info" id="info${opcion.name}">
             <p>${opcion.explicacion}</p>
-        </div>
-        <a href="${opcion.link}">Inscribirse</a>
-    </div>`
+        </div>`
+
+    if(distance > 0) {
+        html += `<a href="#inscripcionesOpciones">Muy pronto</a>
+        </div>`
+    } else {
+        html += `<a href="${opcion.link}">Inscribirse</a>
+        </div>`
+    }
+
+
     })
 
     document.getElementById("inscripcionesOpciones").innerHTML = html
