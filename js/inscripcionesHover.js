@@ -61,7 +61,7 @@ $(document).ready(function () {
         </div>`
 
     if(distance2 > 0) {
-        html += `<a href="#inscripcionesOpciones">Muy pronto</a>
+        html += `<button disabled>Inscribirse</button>
         </div>`
     } else {
         html += `<a href="${opcion.link}">Inscribirse</a>
@@ -70,6 +70,14 @@ $(document).ready(function () {
 
 
     })
+
+    if(distance2 > 0) {
+        html += `<div class="preInscripcion"> 
+            <p class="preInscripcion">Estate atento, ¡Las inscripciones abren el 7 de marzo!</p>
+            <a href="#"><i class="bi bi-bell-fill"></i> Activar recordatorio</a>
+        </div>
+        `
+    }
 
     document.getElementById("inscripcionesOpciones").innerHTML = html
 
