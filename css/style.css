@@ -169,6 +169,34 @@ footer ul li:first-child {
   font-weight: 900;
 }
 
+@media all and (max-width: 990px) {
+  footer {
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  footer .socialMedia p {
+    text-align: center;
+  }
+  footer ul {
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+}
+@media all and (max-width: 582px) {
+  footer {
+    height: 600px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  footer .socialMedia p {
+    text-align: center;
+  }
+  footer ul {
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+}
 .subheader {
   height: 440px;
   width: 100%;
@@ -737,8 +765,90 @@ footer ul li:first-child {
     font-family: "PascuaJoven18";
   }
 
-  .donacionesHome, .juego, .testimonios, .redesContainer, .recursosHome, .circleSection, .sectionPJ21, #redesBackground, .inscripcionesCirculos, footer {
-    display: none;
+  .testimonios {
+    height: fit-content;
+    padding: 10px 0px;
+    background-image: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .testimonios .container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .donacionesHome {
+    padding: 50px 0px;
+  }
+  .donacionesHome .donacionesFlex {
+    padding: 20px;
+  }
+
+  .redesContainer h2, .redesContainer .hero .lema h1, .hero .lema .redesContainer h1, .redesContainer .hero .title h1, .hero .title .redesContainer h1 {
+    font-size: 2rem;
+  }
+  .redesContainer ul {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 12px;
+  }
+  .redesContainer .redesContent .content iframe {
+    width: 90%;
+    height: 400px;
+  }
+  .redesContainer .redesContent .content h3 {
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+  .redesContainer .redesContent .content iframe {
+    padding-top: 25px;
+  }
+  .redesContainer .redesContent .content p {
+    font-size: 1rem;
+  }
+  .redesContainer .redesContent .content .redes {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 80px;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes {
+    width: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 64px;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes img {
+    width: 100%;
+  }
+
+  .juego {
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  .juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
+    font-size: 2.5rem;
+  }
+  .juego .aboutFlex, .juego .gameFlex {
+    flex-flow: column wrap;
+  }
+  .juego .aboutFlex .image, .juego .gameFlex .image {
+    width: 100%;
+    max-height: 500px;
+    margin-top: 12px;
+  }
+  .juego .aboutFlex .text, .juego .gameFlex .text {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .juego .aboutFlex button, .juego .gameFlex button {
+    width: 80%;
+    font-size: 1rem;
   }
 }
 #nosotros {

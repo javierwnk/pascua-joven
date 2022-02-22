@@ -771,5 +771,128 @@
         }
     }
 
-    .donacionesHome, .juego, .testimonios, .redesContainer, .recursosHome, .circleSection, .sectionPJ21, #redesBackground, .inscripcionesCirculos, footer { display: none }
+    .testimonios {
+        height: fit-content;
+        padding: 10px 0px;
+        background-image: none;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+            .container {
+                width: 100%;
+                border-radius: 0;
+                
+            }
+        
+    
+    }
+
+    .donacionesHome {
+        padding: 50px 0px;
+    
+        
+        .donacionesFlex {
+            padding: 20px;
+
+        }
+    }
+
+   
+    .redesContainer {
+        h2 {
+            font-size: 2rem;
+        }
+    
+        ul {
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 12px;
+        }
+    
+        .redesContent {
+      
+        
+            .content {
+    
+                iframe {
+                    width: 90%;
+                    height: 400px;
+                }
+        
+                h3 {
+                    padding-top: 30px;
+                    font-size: 1rem;
+                }
+        
+                iframe {
+                    padding-top: 25px;
+                }
+            
+                p {      
+                    font-size: 1rem;
+                }
+
+                .redes {
+                    width: 95%;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 30px;
+                    row-gap: 30px;
+                    margin-top: 80px;
+    
+                    .cardRedes {
+                        width: 100px;
+                        display: flex;
+                        flex-flow: column wrap;
+                        align-items: center;
+                        row-gap: 64px;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            
+            }
+            
+        }
+        
+    }
+
+    .juego {
+        height: fit-content;
+        padding: 50px 0px;
+    
+        h2 {
+            font-size: 2.5rem;
+        }
+    
+        .aboutFlex, .gameFlex {
+            flex-flow: column wrap;
+
+            .image {
+                width: 100%;
+                max-height: 500px;
+                margin-top: 12px;
+            }
+        
+            .text {
+                width: 100%;
+                font-size: 1.2rem;
+            }
+    
+            button {
+                width: 80%;
+                font: {
+                    size: 1rem;
+                }
+                }
+    
+        }
+    }
+  
 } // fin media
