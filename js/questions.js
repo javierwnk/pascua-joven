@@ -9,7 +9,7 @@ let questions = [
     },
     {
         pregunta: "¿Cómo se puede participar? ¿Hay que inscribirse?",
-        respuesta: "Sí, hay que inscribirse. Se puede ser parte como: participante, coordinador de grupo, servidor o acompañante. Según tu rol, vas a llenar un formulario con datos personales y una breve ficha médica que tendrás que enviar (si sos menor de edad debe ir firmada por tu madre, padre o tutor) y junto con eso, tendrás que abonar el valor individual del retiro (se puede abonar en efectivo o por Mercado Pago). Las inscripciones suelen abrir un mes y medio previo al retiro, las comunicamos por nuestras redes sociales y yendo a difundir a los colegios y parroquias."
+        respuesta: "Sí, hay que inscribirse. Se puede ser parte como: participante, coordinador de grupo, servidor o acompañante. Según tu rol, vas a llenar un formulario con datos personales y una breve ficha médica que tendrás que enviar (si sos menor de edad debe ir firmada por tu madre, padre o tutor) y junto con eso, tendrás que abonar el valor individual del retiro en efectivo o por Mercado Pago. Las inscripciones suelen abrir un mes y medio previo al retiro, las comunicamos por nuestras redes sociales y yendo a difundir a los colegios y parroquias."
     },
     {
         pregunta: "¿Quiénes pueden ser participantes?",
@@ -53,7 +53,7 @@ let questions = [
     },
     {
         pregunta: "Quiero hacer una donación, ¿cómo hago?",
-        respuesta: "Para donar pueden ingresar a nuestra sección de donaciones: LINK, donde encontrarán toda la información para enterarse qué necesitamos y cómo pueden ayudarnos."
+        respuesta: "Para donar pueden ingresar a nuestra sección de donaciones: https://pascuajoven.com.ar/donar.html, donde encontrarán toda la información para enterarse qué necesitamos y cómo pueden ayudarnos."
     },
     {
         pregunta: "Quiero comprar algún producto oficial de Pascua, ¿cómo hago?",

@@ -7,7 +7,7 @@
 .historia {
 
     width: 100%;
-    padding: 64px 0 0 0;
+    padding: 32px 0;
     background-image: url("../images/nosotros-background-1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +24,6 @@
         p {
             color: #1F3031;
             text-align: justify;
-            line-height: 28px;
 
         }
 
@@ -33,14 +32,26 @@
     
 }
 
+.sliderLemas {
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
+    .carousel {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
 .logoInfo {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 15px;
 
     div {
-        max-height: 637px;
+        max-height: 450px;
 
         h2 {
             font-family: "PascuaJoven18";
@@ -49,12 +60,11 @@
         }
 
         p {
-            line-height: 34.16px;
             width: 90%;
         }
 
         video {
-            max-height: 637px;
+            max-height: 450px;
         }
     }
 
@@ -82,9 +92,6 @@
                 max-height: 440px;
             }
 
-            p {
-                line-height: 32.16px;
-            }
         }
 
         .text {
@@ -97,15 +104,211 @@
         margin: 64px auto 24px auto;
 
         p {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-family: var(--bs-body-font-family);
         }
 
         p:first-child {
             font-family: "PascuaJoven18";
-            font-size: 5rem;
+            font-size: 3.12rem;
             margin: 0;
             line-height: 40px;
         }
     }
 }
+
+
+@media all and (max-width: 769px) {
+    #nosotros {
+        background-image: url("../images/headers/nosotros.png");
+
+    }
+    
+    
+    .sliderLemas {
+        .carousel {
+            width: 100%;
+        } 
+    }
+    
+    .logoInfo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 15px;
+    
+        div {
+            
+            max-height: 400px;
+    
+            h2 {
+                font-family: "PascuaJoven18";
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+    
+            p {
+                width: 90%;
+            }
+    
+            video {
+                max-height: 400px;
+            }
+        }
+    
+        .text {
+            width: 40%;
+        }
+    }
+    
+    .recuerdos {
+        img {
+            width: 100%;
+        }
+    
+        .pope {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            margin-top: 64px;
+    
+            div {
+                max-height: 550px;
+    
+                img {
+                    max-height: 250px;
+                }
+    
+            }
+    
+            .text {
+                width: 30%;
+            }
+        }
+    
+    
+        .videoPope {
+            width: 80%;
+            margin: 64px auto 24px auto;
+    
+            p {
+                font-size: 1rem;
+                font-family: var(--bs-body-font-family);
+            }
+    
+            p:first-child {
+                font-family: "PascuaJoven18";
+                font-size: 3.12rem;
+                margin: 0;
+                line-height: 40px;
+            }
+
+            iframe {
+                height: 400px;
+            }
+        }
+    }
+} // fin media
+
+@media all and (max-width: 582px) {
+    #nosotros {
+        background-image: url("../images/headers/nosotros.png");
+
+    }
+    
+    
+    .sliderLemas {
+        .carousel {
+            width: 100%;
+        } 
+    }
+    
+    .logoInfo {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 25px;
+    
+        div {
+
+            width: 90%;
+            margin: 0 auto;
+            max-height: none;
+    
+            h2 {
+                font-family: "PascuaJoven18";
+                font-size: 2rem;
+                text-transform: uppercase;
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            video {
+                max-height: 300px;
+                margin: 0 auto;
+            }
+        }
+    
+        .text {
+            width: inherit;
+        }
+    }
+    
+    .recuerdos {
+        img {
+            width: 100%;
+        }
+    
+        .pope {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin-top: 32px;
+    
+            div {
+                max-height: none;
+                width: 90%;
+                margin: 12px auto;
+                img {
+                    max-height: 440px;
+
+                }
+    
+            }
+    
+            .text {
+                width: 90%;
+            }
+        }
+    
+        .videoPope {
+            width: 80%;
+            margin: 64px auto 24px auto;
+    
+            p {
+                font-size: 1rem;
+                font-family: var(--bs-body-font-family);
+            }
+    
+            p:first-child {
+                font-family: "PascuaJoven18";
+                font-size: 3.12rem;
+                margin: 0;
+                line-height: 40px;
+            }
+
+            iframe {
+                height: 200px;
+            }
+        }
+    }
+} // fin media
+

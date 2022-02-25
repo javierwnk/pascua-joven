@@ -1,6 +1,6 @@
 document.getElementById("youtube").addEventListener("click", () => {
 
-    document.getElementById("redesBackground").style.background = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Youtube.jpeg')";
+    document.getElementById("redesBackground").style.background = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Youtube.jpeg')";
 
     document.getElementById("redesContent").innerHTML = `
     <div class="content container">
@@ -16,7 +16,7 @@ document.getElementById("youtube").addEventListener("click", () => {
 
 document.getElementById("spotify").addEventListener("click", () => {
 
-    document.getElementById("redesBackground").style.background = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/spotify.jpeg')";
+    document.getElementById("redesBackground").style.background = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/spotify.jpeg')";
 
     document.getElementById("redesContent").innerHTML = `
     <div class="content container">
@@ -34,7 +34,7 @@ document.getElementById("spotify").addEventListener("click", () => {
 
 document.getElementById("rrss").addEventListener("click", () => {
 
-    document.getElementById("redesBackground").style.background = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/RRSS.jpeg')";
+    document.getElementById("redesBackground").style.background = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/RRSS.jpeg')";
 
     document.getElementById("redesContent").innerHTML = ` 
     <div class="content container">

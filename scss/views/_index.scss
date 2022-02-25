@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    height: 700px;
+    height: 620px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpeg');;
     background-size: cover;
     background-position: center;
@@ -24,7 +24,7 @@
             text-align: center;
 
             #dias, #horas, #minutos, #segundos {
-                font-size: 8rem;
+                font-size: 7rem;
                 font-weight: 900;
                 margin-bottom: 0;
             }
@@ -35,7 +35,7 @@
 
         h2 {
             font-family: "MandelaScript";
-            font-size: 6rem;
+            font-size: 5rem;
             text-align: center;
             color: $white;   
             margin-top: 60px;
@@ -52,7 +52,7 @@
     .title {
         @extend .lema;
         h2 {
-            font-size: 4rem;
+            font-size: 5rem;
             font-family: "PascuaJoven18";
         }
     }
@@ -60,18 +60,18 @@
 
 .donacionesHome {
     height: fit-content;
-    padding: 100px 0px;
+    padding: 60px 0px;
 
     h2 {
         text-align: center;
-        font-size: 6rem;
+        font-size: 3.5rem;
         font-weight: 400;
         font-family: "PascuaJoven18";
     }
 
     h3 {
         text-align: center;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         font-weight: 400;
         font-family: "PascuaJoven18";
     }
@@ -120,7 +120,7 @@
             border-radius: 5px;
             margin: 12px auto;
             font: {
-                size: 1.5rem;
+                size: 1.2rem;
             }
             transition: all 0.2s;
         }
@@ -133,18 +133,18 @@
 }
 
 .juego {
-    height: 650px;
-    padding: 100px 0px;
+    height: fit-content;
+    padding: 40px 0px;
 
     h2 {
         text-align: center;
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-family: "PascuaJoven18";
     }
 
     .aboutFlex, .gameFlex {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         .image {
@@ -161,7 +161,7 @@
 
         .text {
             width: 40%;
-            font-size: 1.2rem;
+            font-size: 1rem;
             display: flex;
             flex-flow: column wrap;
             align-items: center;
@@ -199,7 +199,7 @@
 .testimonios {
     height: 500px;
     padding: 50px 0px;
-    background-image: url("../../images/final.jpg");
+    background-image: url("../images/final.jpg");
     background-position: bottom;
     background-size: cover;
 
@@ -251,12 +251,11 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding-top: 50px;
+    padding: 25px 0 0 0;
 
     h2 {
         font-family: "PascuaJoven18";
-        font-size: 4rem;
-        font-weight: 700;
+        font-size: 3.5rem;
         text-align: center;
         color: $white;
     }
@@ -271,7 +270,7 @@
             font-family: "PascuaJoven18";
             text-align: center;
             width: 170px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             padding: 0px 5px;
             color: $white;
@@ -289,10 +288,9 @@
     }
 
     .redesContent {
-        height: 600px;
+        height: 500px;
         width: 100%;
         color: $white;
-        margin-top: 20px;
     
     
         .content {
@@ -309,7 +307,7 @@
             h3 {
                 text-align: center;
                 padding-top: 30px;
-                font-size: 2.3rem;
+                font-size: 1.5rem;
             }
     
             iframe {
@@ -362,18 +360,18 @@
 .inscripcionesCirculos {
 
     text-align: center;
-    padding: 100px 0 50px 0;
+    padding: 40px 0 50px 0;
     background: $white;
     color: $black;
 
     h2 {
         font-family: "PascuaJoven18";
-        font-weight: 400;
-        font-size: 55px;
+        font-weight: 500;
+        font-size: 3.5rem;
     }
 
     p {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 20px;
 
     }
@@ -382,11 +380,11 @@
 .recursosHome {
 
     height: fit-content;
-    padding: 100px 0;
+    padding: 50px 0;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 
     h2 {
-        font-size: 55px;
+        font-size: 3.5rem;
         font-family: "PascuaJoven18";
         text-align: center;
     
@@ -396,11 +394,11 @@
 
 .circleSection {
     height: fit-content;
-    padding: 80px 0 0 50px;
+    padding: 40px 0 0 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    row-gap: 32px;
+    row-gap: 20px;
 
     .pointer {
         cursor: pointer;
@@ -435,6 +433,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 5px;
 
             p {
                 line-height: 18.92px;
@@ -459,7 +458,7 @@
             font-size: 1.2rem;
             width: 90%;
             height: 40px;
-            margin: 12px auto;
+            margin: 5px auto;
             background-color: $secondary;
             color: $black;
             border-radius: 5px;
@@ -487,6 +486,10 @@
 .sectionPJ21 {
     width: 100%;
     height: fit-content;
+
+    .mobile {
+        display: none;
+    }
 }
 
 .sectionPJ21 video {
@@ -495,29 +498,6 @@
 
 }
 
-.preInscripcion {
-
-    p {
-        font-family: "PascuaJoven18";
-        font-size: 40px;
-        color: #12878B;
-        letter-spacing: 3px;
-    }
-
-    a {
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 200px;
-        height: 40px;
-        background-color: #D1E872;
-        color: #545454;
-
-        text-decoration: none;
-        border-radius: 5px;
-    }
-}
 
 @media all and (max-width: 1012px) {
     .circleSection {
@@ -946,4 +926,16 @@
             letter-spacing: 3px;
         }
         }
+
+    .sectionPJ21 {
+
+    
+        .mobile {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+    }
 } // fin media

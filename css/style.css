@@ -207,7 +207,7 @@ footer ul li:first-child {
 
 .hero {
   width: 100%;
-  height: 700px;
+  height: 620px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpeg");
   background-size: cover;
   background-position: center;
@@ -231,13 +231,13 @@ footer ul li:first-child {
   text-align: center;
 }
 .hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 900;
   margin-bottom: 0;
 }
 .hero .lema h2, .hero .title h2, .hero .lema h1, .hero .title h1 {
   font-family: "MandelaScript";
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
   color: #FFF;
   margin-top: 60px;
@@ -248,23 +248,23 @@ footer ul li:first-child {
   color: #D1E872;
 }
 .hero .title h2, .hero .title h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "PascuaJoven18";
 }
 
 .donacionesHome {
   height: fit-content;
-  padding: 100px 0px;
+  padding: 60px 0px;
 }
 .donacionesHome h2, .donacionesHome .hero .lema h1, .hero .lema .donacionesHome h1, .donacionesHome .hero .title h1, .hero .title .donacionesHome h1 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 3.5rem;
   font-weight: 400;
   font-family: "PascuaJoven18";
 }
 .donacionesHome h3 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: "PascuaJoven18";
 }
@@ -305,7 +305,7 @@ footer ul li:first-child {
   border: 0;
   border-radius: 5px;
   margin: 12px auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: all 0.2s;
 }
 .donacionesHome .donacionesFlex button:hover {
@@ -314,17 +314,17 @@ footer ul li:first-child {
 }
 
 .juego {
-  height: 650px;
-  padding: 100px 0px;
+  height: fit-content;
+  padding: 40px 0px;
 }
 .juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "PascuaJoven18";
 }
 .juego .aboutFlex, .juego .gameFlex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .juego .aboutFlex .image, .juego .gameFlex .image {
@@ -339,7 +339,7 @@ footer ul li:first-child {
 }
 .juego .aboutFlex .text, .juego .gameFlex .text {
   width: 40%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -369,7 +369,7 @@ footer ul li:first-child {
 .testimonios {
   height: 500px;
   padding: 50px 0px;
-  background-image: url("../../images/final.jpg");
+  background-image: url("../images/final.jpg");
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -408,12 +408,11 @@ footer ul li:first-child {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding-top: 50px;
+  padding: 25px 0 0 0;
 }
 .redesContainer h2, .redesContainer .hero .lema h1, .hero .lema .redesContainer h1, .redesContainer .hero .title h1, .hero .title .redesContainer h1 {
   font-family: "PascuaJoven18";
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 3.5rem;
   text-align: center;
   color: #FFF;
 }
@@ -427,7 +426,7 @@ footer ul li:first-child {
   font-family: "PascuaJoven18";
   text-align: center;
   width: 170px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 0px 5px;
   color: #FFF;
@@ -442,10 +441,9 @@ footer ul li:first-child {
   cursor: pointer;
 }
 .redesContainer .redesContent {
-  height: 600px;
+  height: 500px;
   width: 100%;
   color: #FFF;
-  margin-top: 20px;
 }
 .redesContainer .redesContent .content {
   display: flex;
@@ -460,7 +458,7 @@ footer ul li:first-child {
 .redesContainer .redesContent .content h3 {
   text-align: center;
   padding-top: 30px;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 .redesContainer .redesContent .content iframe {
   padding-top: 25px;
@@ -498,38 +496,38 @@ footer ul li:first-child {
 
 .inscripcionesCirculos {
   text-align: center;
-  padding: 100px 0 50px 0;
+  padding: 40px 0 50px 0;
   background: #FFF;
   color: #3C3C3C;
 }
 .inscripcionesCirculos h2, .inscripcionesCirculos .hero .lema h1, .hero .lema .inscripcionesCirculos h1, .inscripcionesCirculos .hero .title h1, .hero .title .inscripcionesCirculos h1 {
   font-family: "PascuaJoven18";
-  font-weight: 400;
-  font-size: 55px;
+  font-weight: 500;
+  font-size: 3.5rem;
 }
 .inscripcionesCirculos p {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
 }
 
 .recursosHome {
   height: fit-content;
-  padding: 100px 0;
+  padding: 50px 0;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .recursosHome h2, .recursosHome .hero .lema h1, .hero .lema .recursosHome h1, .recursosHome .hero .title h1, .hero .title .recursosHome h1 {
-  font-size: 55px;
+  font-size: 3.5rem;
   font-family: "PascuaJoven18";
   text-align: center;
 }
 
 .circleSection {
   height: fit-content;
-  padding: 80px 0 0 50px;
+  padding: 40px 0 0 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  row-gap: 32px;
+  row-gap: 20px;
 }
 .circleSection .pointer {
   cursor: pointer;
@@ -558,6 +556,7 @@ footer ul li:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 .circleSection .circleCard .info p {
   line-height: 18.92px;
@@ -577,7 +576,7 @@ footer ul li:first-child {
   font-size: 1.2rem;
   width: 90%;
   height: 40px;
-  margin: 12px auto;
+  margin: 5px auto;
   background-color: #D1E872;
   color: #3C3C3C;
   border-radius: 5px;
@@ -596,29 +595,13 @@ footer ul li:first-child {
   width: 100%;
   height: fit-content;
 }
+.sectionPJ21 .mobile {
+  display: none;
+}
 
 .sectionPJ21 video {
   width: 100%;
   height: fit-content;
-}
-
-.preInscripcion p {
-  font-family: "PascuaJoven18";
-  font-size: 40px;
-  color: #12878B;
-  letter-spacing: 3px;
-}
-.preInscripcion a {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 200px;
-  height: 40px;
-  background-color: #D1E872;
-  color: #545454;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
 @media all and (max-width: 1012px) {
@@ -888,6 +871,13 @@ footer ul li:first-child {
     color: #12878B;
     letter-spacing: 3px;
   }
+
+  .sectionPJ21 .mobile {
+    display: block;
+  }
+  .sectionPJ21 .desktop {
+    display: none;
+  }
 }
 #nosotros {
   background-image: url("../images/headers/nosotros.png");
@@ -897,7 +887,7 @@ footer ul li:first-child {
 
 .historia, .donaciones {
   width: 100%;
-  padding: 64px 0 0 0;
+  padding: 32px 0;
   background-image: url("../images/nosotros-background-1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -913,7 +903,15 @@ footer ul li:first-child {
 .historia .content p, .donaciones .content p {
   color: #1F3031;
   text-align: justify;
-  line-height: 28px;
+}
+
+.sliderLemas {
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.sliderLemas .carousel {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .logoInfo {
@@ -921,9 +919,10 @@ footer ul li:first-child {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 15px;
 }
 .logoInfo div {
-  max-height: 637px;
+  max-height: 450px;
 }
 .logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
   font-family: "PascuaJoven18";
@@ -931,11 +930,10 @@ footer ul li:first-child {
   text-transform: uppercase;
 }
 .logoInfo div p {
-  line-height: 34.16px;
   width: 90%;
 }
 .logoInfo div video {
-  max-height: 637px;
+  max-height: 450px;
 }
 .logoInfo .text {
   width: 30%;
@@ -957,9 +955,6 @@ footer ul li:first-child {
 .recuerdos .pope div img {
   max-height: 440px;
 }
-.recuerdos .pope div p {
-  line-height: 32.16px;
-}
 .recuerdos .pope .text {
   width: 30%;
 }
@@ -968,16 +963,165 @@ footer ul li:first-child {
   margin: 64px auto 24px auto;
 }
 .recuerdos .videoPope p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: var(--bs-body-font-family);
 }
 .recuerdos .videoPope p:first-child {
   font-family: "PascuaJoven18";
-  font-size: 5rem;
+  font-size: 3.12rem;
   margin: 0;
   line-height: 40px;
 }
 
+@media all and (max-width: 769px) {
+  #nosotros {
+    background-image: url("../images/headers/nosotros.png");
+  }
+
+  .sliderLemas .carousel {
+    width: 100%;
+  }
+
+  .logoInfo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .logoInfo div {
+    max-height: 400px;
+  }
+  .logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .logoInfo div p {
+    width: 90%;
+  }
+  .logoInfo div video {
+    max-height: 400px;
+  }
+  .logoInfo .text {
+    width: 40%;
+  }
+
+  .recuerdos img {
+    width: 100%;
+  }
+  .recuerdos .pope {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 64px;
+  }
+  .recuerdos .pope div {
+    max-height: 550px;
+  }
+  .recuerdos .pope div img {
+    max-height: 250px;
+  }
+  .recuerdos .pope .text {
+    width: 30%;
+  }
+  .recuerdos .videoPope {
+    width: 80%;
+    margin: 64px auto 24px auto;
+  }
+  .recuerdos .videoPope p {
+    font-size: 1rem;
+    font-family: var(--bs-body-font-family);
+  }
+  .recuerdos .videoPope p:first-child {
+    font-family: "PascuaJoven18";
+    font-size: 3.12rem;
+    margin: 0;
+    line-height: 40px;
+  }
+  .recuerdos .videoPope iframe {
+    height: 400px;
+  }
+}
+@media all and (max-width: 582px) {
+  #nosotros {
+    background-image: url("../images/headers/nosotros.png");
+  }
+
+  .sliderLemas .carousel {
+    width: 100%;
+  }
+
+  .logoInfo {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .logoInfo div {
+    width: 90%;
+    margin: 0 auto;
+    max-height: none;
+  }
+  .logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logoInfo div p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logoInfo div video {
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .logoInfo .text {
+    width: inherit;
+  }
+
+  .recuerdos img {
+    width: 100%;
+  }
+  .recuerdos .pope {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 32px;
+  }
+  .recuerdos .pope div {
+    max-height: none;
+    width: 90%;
+    margin: 12px auto;
+  }
+  .recuerdos .pope div img {
+    max-height: 440px;
+  }
+  .recuerdos .pope .text {
+    width: 90%;
+  }
+  .recuerdos .videoPope {
+    width: 80%;
+    margin: 64px auto 24px auto;
+  }
+  .recuerdos .videoPope p {
+    font-size: 1rem;
+    font-family: var(--bs-body-font-family);
+  }
+  .recuerdos .videoPope p:first-child {
+    font-family: "PascuaJoven18";
+    font-size: 3.12rem;
+    margin: 0;
+    line-height: 40px;
+  }
+  .recuerdos .videoPope iframe {
+    height: 200px;
+  }
+}
 #donaciones {
   background-image: url("../images/headers/donaciones.png");
   background-size: cover;
@@ -1026,7 +1170,7 @@ footer ul li:first-child {
 
 .faq {
   width: 100%;
-  padding: 64px 0;
+  padding: 32px 0;
 }
 .faq .content {
   width: 80%;
@@ -1057,7 +1201,7 @@ footer ul li:first-child {
 
 .contacto {
   width: 100%;
-  padding: 64px 0;
+  padding: 32px 0;
 }
 .contacto .content {
   width: 80%;
@@ -1116,7 +1260,7 @@ footer ul li:first-child {
 
 .recursos {
   width: 100%;
-  padding: 64px 0 64px 0;
+  padding: 32px 0;
   background-image: url("../images/recursos-brackground-1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1188,7 +1332,7 @@ footer ul li:first-child {
 
 .galeria {
   width: 100%;
-  padding: 64px 0 64px 0;
+  padding: 32px 0;
 }
 .galeria .content {
   width: 80%;
@@ -1262,7 +1406,7 @@ footer ul li:first-child {
 
 .inscripciones {
   width: 100%;
-  padding: 64px 0 64px 0;
+  padding: 32px 0;
 }
 .inscripciones .content {
   width: 80%;
@@ -1275,21 +1419,19 @@ footer ul li:first-child {
 .inscripciones .content p {
   color: #1F3031;
   text-align: justify;
-  line-height: 28px;
 }
 .inscripciones .content .opcionesInscripcion {
   height: fit-content;
-  padding: 80px 0 0 50px;
+  padding: 40px 0 0 0px;
   display: flex;
   flex-flow: row wrap;
-  row-gap: 112px;
+  row-gap: 50px;
   justify-content: space-around;
 }
 .inscripciones .content .opcionesInscripcion .circleCard {
-  width: 400px;
+  width: 360px;
   height: fit-content;
   text-align: center;
-  font-size: 5rem;
 }
 .inscripciones .content .opcionesInscripcion .circleCard div.imagenCard {
   height: 140px;
@@ -1308,7 +1450,6 @@ footer ul li:first-child {
   text-align: center;
   font-size: 1rem;
   margin-top: 5px;
-  line-height: 25px;
 }
 .inscripciones .content .opcionesInscripcion .circleCard a {
   display: flex;
