@@ -53,7 +53,7 @@ let questions = [
     },
     {
         pregunta: "Quiero hacer una donación, ¿cómo hago?",
-        respuesta: "Para donar pueden ingresar a nuestra sección de donaciones: https://pascuajoven.com.ar/donar.html, donde encontrarán toda la información para enterarse qué necesitamos y cómo pueden ayudarnos."
+        respuesta: `Para donar pueden ingresar a nuestra <a href="https://pascuajoven.com.ar/donar.html">sección de donaciones</a>, donde encontrarán toda la información para enterarse qué necesitamos y cómo pueden ayudarnos.`
     },
     {
         pregunta: "Quiero comprar algún producto oficial de Pascua, ¿cómo hago?",

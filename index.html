@@ -41,7 +41,7 @@
                             <a class="nav-link" href="recursos.html">Recursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galeria</a>
+                            <a class="nav-link" href="galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="preguntas-frecuentes.html">FAQ</a>
@@ -139,7 +139,7 @@
                     <h2>SUMATE</h2>
                     <h3>¡Ayudá a que un joven forme parte de Pascua Joven becando a un participante!</h3>
 
-                    <button>Quiero donar</button>
+                    <button id="donaciones">Quiero donar</button>
 
                 </div>
 
@@ -147,24 +147,35 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/1.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/3.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/4.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/5.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/donaciones/2.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/donaciones/6.jpeg" class="d-block w-100" alt="...">
                             </div>
-
+                            <div class="carousel-item">
+                                <img src="./images/donaciones/7.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/donaciones/8.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/donaciones/9.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/donaciones/10.jpg" class="d-block w-100" alt="...">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,32 +187,44 @@
             <h2>EXPLORÁ NUESTRAS OTRAS SECCIONES</h2>
 
             <div class="circleSection">
-                <div class="circleCard pointer" id="botonRecursos">
-                    <div class="circle" id="imagen1">
-                        <img src="./images/icons/fg_recursos.png" alt="">
+
+                <div class="circleCardRecursos">
+                    <div class="circleCard pointer" id="botonRecursos">
+                        <div class="circle" id="imagen1">
+                            <img src="./images/icons/fg_recursos.png" alt="">
+                        </div>
+                        <p>RECURSOS</p>
                     </div>
-                    <p>RECURSOS</p>
+                </div>
+
+    
+                <div class="circleCardRecursos">
+                    <div class="circleCard pointer" id="botonFAQ">
+                        <div class="circle" id="imagen1">
+                            <img src="./images/icons/fg_faq.png" alt="">
+                        </div>
+                        <p>PREGUNTAS FRECUENTES</p>
+                    </div>    
                 </div>
     
-                <div class="circleCard pointer" id="botonFAQ">
-                    <div class="circle" id="imagen1">
-                        <img src="./images/icons/fg_faq.png" alt="">
-                    </div>
-                    <p>PREGUNTAS FRECUENTES</p>
+
+                <div class="circleCardRecursos">
+                    <div class="circleCard pointer" id="botonGaleria">
+                        <div class="circle" id="imagen1">
+                            <img src="./images/icons/fg_galeria.png" alt="">
+                        </div>
+                        <p>GALERÍA DE FOTOS</p>
+                    </div>    
                 </div>
     
-                <div class="circleCard pointer" id="botonGaleria">
-                    <div class="circle" id="imagen1">
-                        <img src="./images/icons/fg_galeria.png" alt="">
+                <div class="circleCardRecursos">
+                    <div class="circleCard pointer" id="botonHistoria">
+                        <div class="circle" id="imagen1">
+                            <img src="./images/icons/fg_historia.png" alt="">
+                        </div>
+                        <p>NUESTRA HISTORIA</p>
                     </div>
-                    <p>GALERÍA DE FOTOS</p>
-                </div>
     
-                <div class="circleCard pointer" id="botonHistoria">
-                    <div class="circle" id="imagen1">
-                        <img src="./images/icons/fg_historia.png" alt="">
-                    </div>
-                    <p>NUESTRA HISTORIA</p>
                 </div>
     
             </div>    
@@ -212,40 +235,8 @@
             <div class="container splide">
                 <div class="splide__track">
                     <ul class="splide__list" id="testimoniosSlider">
-                        <li class="splide__slide">
-                            <div class="splide__text">
-                                <p class="rol">Coordinador de grupito</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
-                                    expedita
-                                    odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
-                                    Voluptas
-                                    vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
-                                    necessitatibus
-                                    accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
-                                    cumque
-                                    sed quo esse quis iure perspiciatis veniam tempora natus eligendi suscipit? Sit
-                                    consequatur aspernatur facilis omnis aliquid, adipisci cumque, pariatur
-                                    accusamus.</p>
-                                <p class="name">- Pepito Gomez</p>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="splide__text">
-                                <p class="rol">Coordinador de grupito</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Consequatur, hic cum quisquam, sequi consequuntur error iusto molestias quasi
-                                    expedita
-                                    odit facilis maxime beatae possimus reprehenderit delectus incidunt aliquid?
-                                    Voluptas
-                                    vero repellat pariatur expedita libero. Deleniti tempore quam sapiente
-                                    necessitatibus
-                                    accusamus, eos omnis aliquid dolorem praesentium ea architecto voluptate nostrum
-                                    cumque.
-                                    </p>
-                                <p class="name">- Pepito Gomez</p>
-                            </div>
-                        </li>
+
+            
 
                     </ul>
                 </div>
@@ -260,12 +251,12 @@
 
                     <h2>JUGÁ CON NOSOTROS</h2>
 
-                    <button><a href="">Ir al juego</a></button>
+                    <button><a href="./juego">Ir al juego</a></button>
 
                 </div>
 
                 <div class="image">
-                    <img src="images/game.jpg" alt="">
+                    <video muted autoplay loop src="./images/juego.mp4"></video>
                 </div>
             </div>
         </div>
@@ -281,31 +272,31 @@
         <div class="container socialMedia">
             <p>Seguinos en redes sociales</p>
             <ul>
-                <li><a href=""><i class="bi bi-facebook"></i></a></li>
-                <li><a href=""><i class="bi bi-twitter"></i></a></li>
-                <li><a href=""><i class="bi bi-instagram"></i></a></li>
-                <li><a href=""><i class="bi bi-youtube"></i></a></li>
-                <li><a href=""><i class="bi bi-spotify"></i></a></li>
+                <li><a href="https://www.facebook.com/PascuaJovenMoron/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://twitter.com/pascuajoven" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://instagram.com/pascuajoven" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/c/PascuaJovenMor%C3%B3n" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/6YzGHO0uipchoiqNvqODYY?si=4f159480d0d040ed" target="_blank"><i class="bi bi-spotify"></i></a></li>
             </ul>
         </div>
 
         <ul>
-            <li>Contáctanos</li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Preguntas frecuentes</a></li>
+            <li>Contactanos</li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
         </ul>
 
         <ul>
             <li>Explorá</li>
-            <li><a href="">Historia de Pascua Joven Morón</a></li>
-            <li><a href="">Recursos descargables</a></li>
-            <li><a href="">Galeria</a></li>
+            <li><a href="nosotros.html">Historia de Pascua Joven Morón</a></li>
+            <li><a href="recursos.html">Recursos descargables</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
         </ul>
 
         <ul>
             <li>Formá parte</li>
-            <li><a href="">Inscripciones 2022</a></li>
-            <li><a href="">Donaciones</a></li>
+            <li><a href="inscripciones.html">Inscripciones 2022</a></li>
+            <li><a href="donar.html">Donaciones</a></li>
         </ul>
 
     </footer>
@@ -321,6 +312,9 @@
     <script src="js/redireccionamientos.js"></script>
     <script src="js/inscripcionesHover.js"></script>
     <script src="js/rrss.js"></script>
+    <script>
+        document.getElementById("donaciones").addEventListener("click", () => window.location.href = "donar.html")
+    </script>
 
 </body>
 

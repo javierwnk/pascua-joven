@@ -8,7 +8,7 @@ document.getElementById("youtube").addEventListener("click", () => {
 
         <iframe width="600" height="337" src="https://www.youtube.com/embed/49tfoC0vxJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <p><a href="https://www.youtube.com/c/PascuaJovenMor%C3%B3n"> Ver
+        <p><a target="_blank" href="https://www.youtube.com/c/PascuaJovenMor%C3%B3n"> Ver
                 canal de YouTube </a></p>
 
     </div>`
@@ -25,7 +25,7 @@ document.getElementById("spotify").addEventListener("click", () => {
         <iframe src="https://open.spotify.com/embed/album/5leT3cB0W1BgBUyDYXQS2F" width="600" height="400"
             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-        <p><a href="https://open.spotify.com/artist/6YzGHO0uipchoiqNvqODYY?si=tz2T_8vfTeSAEFGr5VsPFw"> Ver
+        <p><a target="_blank" href="https://open.spotify.com/artist/6YzGHO0uipchoiqNvqODYY?si=tz2T_8vfTeSAEFGr5VsPFw"> Ver
                 albums </a></p>
 
     </div>`
@@ -41,15 +41,15 @@ document.getElementById("rrss").addEventListener("click", () => {
         <div class="redes">
             <div class="cardRedes">
                 <img src="./images/facebook.svg" alt="Facebook icon">
-                <a href="" class="btnPrimary">Ir</a>
+                <a href="https://www.facebook.com/PascuaJovenMoron/" target="_blank" class="btnPrimary">Ir</a>
             </div>
             <div class="cardRedes">
                 <img src="./images/twitter.svg" alt="Twitter icon">
-                <a href="" class="btnPrimary">Ir</a>
+                <a href="https://twitter.com/pascuajoven" target="_blank" class="btnPrimary">Ir</a>
             </div>
             <div class="cardRedes">
                 <img src="./images/instagram.svg" alt="Instagram icon">
-                <a href="" class="btnPrimary">Ir</a>
+                <a href="https://instagram.com/pascuajoven" target="_blank" class="btnPrimary">Ir</a>
             </div>
         </div>
     </div>`

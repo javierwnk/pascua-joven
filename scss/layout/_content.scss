@@ -1,8 +1,42 @@
 .subheader {
     height: 440px;
     width: 100%;
-
+    margin-bottom: 90px;
     h1 {
         display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 1854px) {
+
+    .subheader {
+        margin-bottom: 0px;
+        height: fit-content;
+    }
+} // fin media
+
+@media all and (max-width: 582px) {
+    .subheader {
+           
+        .desktop {
+            display: none;
+        }
+    
+        .mobile {
+            display: block;
+        }
     }
 }

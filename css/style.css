@@ -200,11 +200,35 @@ footer ul li:first-child {
 .subheader {
   height: 440px;
   width: 100%;
+  margin-bottom: 90px;
 }
 .subheader h1 {
   display: none;
 }
+.subheader img {
+  width: 100%;
+}
+.subheader .desktop {
+  display: block;
+}
+.subheader .mobile {
+  display: none;
+}
 
+@media all and (max-width: 1854px) {
+  .subheader {
+    margin-bottom: 0px;
+    height: fit-content;
+  }
+}
+@media all and (max-width: 582px) {
+  .subheader .desktop {
+    display: none;
+  }
+  .subheader .mobile {
+    display: block;
+  }
+}
 .hero {
   width: 100%;
   height: 620px;
@@ -331,7 +355,7 @@ footer ul li:first-child {
   width: 50%;
   max-height: 500px;
 }
-.juego .aboutFlex .image img, .juego .gameFlex .image img {
+.juego .aboutFlex .image video, .juego .gameFlex .image video {
   width: 100%;
   border: 4px solid #FFF;
   border-radius: 12px;
@@ -523,7 +547,7 @@ footer ul li:first-child {
 
 .circleSection {
   height: fit-content;
-  padding: 40px 0 0 50px;
+  padding: 20px 0 0 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -539,7 +563,20 @@ footer ul li:first-child {
   font-size: 5rem;
 }
 .circleSection .circleCard .cardLogo {
+  width: 250px;
   height: 140px;
+}
+.circleSection .circleCard .cardLogo img {
+  max-width: 250px;
+  max-height: 140px;
+}
+.circleSection .circleCard .circle {
+  width: 250px;
+  height: 140px;
+}
+.circleSection .circleCard .circle img {
+  max-width: 250px;
+  max-height: 140px;
 }
 .circleSection .circleCard .show {
   height: 250px;
@@ -589,6 +626,11 @@ footer ul li:first-child {
 .circleSection .circleCard button:disabled {
   background: #DFDFDF;
   color: #C2C2C2;
+}
+.circleSection .circleCardRecursos {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding: 32px 12px 12px 12px;
 }
 
 .sectionPJ21 {
@@ -879,12 +921,6 @@ footer ul li:first-child {
     display: none;
   }
 }
-#nosotros {
-  background-image: url("../images/headers/nosotros.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .historia, .donaciones {
   width: 100%;
   padding: 32px 0;
@@ -910,7 +946,7 @@ footer ul li:first-child {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .sliderLemas .carousel {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1122,12 +1158,6 @@ footer ul li:first-child {
     height: 200px;
   }
 }
-#donaciones {
-  background-image: url("../images/headers/donaciones.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .donaciones {
   background-image: none;
 }
@@ -1140,19 +1170,53 @@ footer ul li:first-child {
 }
 
 .donationsType {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  margin-bottom: 100px;
+  row-gap: 24px;
 }
 .donationsType .miniCard {
-  width: 360px;
+  width: 220px;
   margin: 0 30px;
   text-align: center;
 }
+.donationsType .miniCard .option {
+  min-height: 100px;
+  max-height: 100px;
+}
+.donationsType .miniCard .option img {
+  max-height: 100px;
+}
+.donationsType .miniCard .option h2, .donationsType .miniCard .option .hero .lema h1, .hero .lema .donationsType .miniCard .option h1, .donationsType .miniCard .option .hero .title h1, .hero .title .donationsType .miniCard .option h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  font-size: 4rem;
+  color: #136F72;
+  font-weight: 700;
+}
 .donationsType .miniCard p {
   margin-top: 15px;
-  min-height: 200px;
+  font-family: "PascuaJoven18";
+  font-size: 2rem;
+}
+
+.fraseDonaciones {
+  margin: 50px auto;
+  width: 60%;
+  color: #12878B;
+  text-align: center;
+}
+.fraseDonaciones h3 {
+  font-family: "PascuaJoven18";
+  font-size: 3rem;
+}
+.fraseDonaciones p {
+  font-family: "MandelaScript";
+  font-size: 2rem;
 }
 
 .thanks {
@@ -1162,15 +1226,23 @@ footer ul li:first-child {
   width: 100%;
 }
 
-#faq {
-  background-image: url("../images/headers/faq.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media all and (max-width: 1155px) {
+  .donationsType {
+    flex-flow: row wrap;
+  }
 }
+@media all and (max-width: 768px) {
+  .donationsType {
+    flex-flow: row wrap;
+  }
 
+  .fraseDonaciones {
+    width: 90%;
+  }
+}
 .faq {
   width: 100%;
-  padding: 32px 0;
+  padding: 50px 0 38px 0;
 }
 .faq .content {
   width: 80%;
@@ -1193,12 +1265,6 @@ footer ul li:first-child {
   box-shadow: none;
 }
 
-#contacto {
-  background-image: url("../images/headers/contacto.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .contacto {
   width: 100%;
   padding: 32px 0;
@@ -1207,18 +1273,24 @@ footer ul li:first-child {
   width: 80%;
   margin: 0 auto;
 }
+.contacto .content .locationContent {
+  display: flex;
+  flex-flow: row wrap;
+}
 .contacto .content p {
   text-align: center;
-  line-height: 35px;
   margin: 0;
   padding: 0;
 }
 .contacto .content form {
-  width: 70%;
+  width: 50%;
   margin: 50px auto;
   display: flex;
   flex-flow: column wrap;
   row-gap: 12px;
+}
+.contacto .content form button {
+  border: none;
 }
 .contacto .content input, .contacto .content textarea {
   border: 0.5px solid #000000;
@@ -1228,18 +1300,18 @@ footer ul li:first-child {
 .contacto .content .location {
   margin-top: 64px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 }
 .contacto .content .location p {
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 .contacto .content table {
   width: 100%;
-  margin-top: 124px;
+  margin-top: 24px;
   text-align: center;
 }
 .contacto .content table i {
@@ -1252,15 +1324,48 @@ footer ul li:first-child {
   text-decoration: none;
 }
 
-#recursos {
-  background-image: url("../images/headers/recursos.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media all and (max-width: 1495px) {
+  .contacto .content {
+    width: 90%;
+  }
+  .contacto .content form {
+    width: 40%;
+  }
+  .contacto .content .location {
+    width: 40%;
+  }
+  .contacto .content .location iframe {
+    width: 90%;
+  }
 }
-
+@media all and (max-width: 834px) {
+  .contacto .content {
+    width: 100%;
+  }
+  .contacto .content .locationContent {
+    flex-flow: column wrap;
+  }
+  .contacto .content form {
+    width: 90%;
+    margin: 50px auto;
+    flex-flow: column wrap;
+  }
+  .contacto .content .location {
+    margin-top: 16px;
+  }
+  .contacto .content .location iframe {
+    width: 90%;
+  }
+  .contacto .content .location p {
+    margin-top: 16px;
+  }
+  .contacto .content table {
+    display: none;
+  }
+}
 .recursos {
   width: 100%;
-  padding: 32px 0;
+  padding: 50px 0;
   background-image: url("../images/recursos-brackground-1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1270,7 +1375,7 @@ footer ul li:first-child {
   margin: 0 auto;
 }
 .recursos .content .sectionContent {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
@@ -1280,6 +1385,7 @@ footer ul li:first-child {
 .recursos .content .sectionContent img {
   display: block;
   margin: 0 auto;
+  width: 80%;
 }
 .recursos .content .sectionContent .options {
   display: flex;
@@ -1298,38 +1404,70 @@ footer ul li:first-child {
 .recursos .content .sectionContent .options a {
   width: 200px;
 }
+.recursos .content .sectionContentColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 40px;
+}
 .recursos .content .sectionContent2 {
-  width: 90%;
-  margin: 124px auto 0 auto;
+  width: 100%;
+  margin: 40px 0 0 0;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
-  padding: 64px;
+  padding: 16px;
   background-color: #FFF;
   display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: space-around;
   align-items: center;
 }
 .recursos .content .sectionContent2 .image {
-  width: 60%;
+  width: 100%;
 }
 .recursos .content .sectionContent2 .image img {
   width: 100%;
 }
 .recursos .content .sectionContent2 .textContent {
-  width: 35%;
+  width: 65%;
   text-align: center;
+  margin-top: 12px;
 }
-.recursos .content .recursosContent {
-  flex-direction: row;
+.recursos .content .sectionContent2 .textContent h2, .recursos .content .sectionContent2 .textContent .hero .lema h1, .hero .lema .recursos .content .sectionContent2 .textContent h1, .recursos .content .sectionContent2 .textContent .hero .title h1, .hero .title .recursos .content .sectionContent2 .textContent h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3rem;
+}
+.recursos .content .sectionContent2 .textContent p {
+  height: 55px;
 }
 
-#galeria {
-  background-image: url("../images/headers/galeria.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media all and (max-width: 582px) {
+  .recursos .content {
+    width: 80%;
+  }
+  .recursos .content .sectionContent img {
+    width: 100%;
+  }
+  .recursos .content .sectionContent .options p {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .recursos .content .sectionContent .options a {
+    width: 200px;
+    font-size: 16px;
+  }
+  .recursos .content .sectionContentColumns {
+    grid-template-columns: 1fr;
+  }
+  .recursos .content .sectionContentColumns .textContent h2, .recursos .content .sectionContentColumns .textContent .hero .lema h1, .hero .lema .recursos .content .sectionContentColumns .textContent h1, .recursos .content .sectionContentColumns .textContent .hero .title h1, .hero .title .recursos .content .sectionContentColumns .textContent h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2rem;
+  }
+  .recursos .content .sectionContentColumns .textContent p {
+    height: 55px;
+    font-size: 1rem;
+  }
 }
-
 .galeria {
   width: 100%;
   padding: 32px 0;
@@ -1398,12 +1536,62 @@ footer ul li:first-child {
   height: 270px;
 }
 
-#inscripciones {
-  background-image: url("../images/headers/inscripciones.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+@media all and (max-width: 582px) {
+  .galeria .content {
+    display: grid;
+    grid-template-areas: "h2 h2" "card1 card2" "card3 card4" "card5 card6" "card7 card8" "card9 card10";
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+  .galeria .content h2, .galeria .content .hero .lema h1, .hero .lema .galeria .content h1, .galeria .content .hero .title h1, .hero .title .galeria .content h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2.5rem;
+    text-align: center;
+    grid-area: h2;
+  }
+  .galeria .content .galleryCard {
+    height: 120px;
+    width: 120px;
+  }
+  .galeria .carrusel {
+    width: 90%;
+  }
 
+  .semifooter {
+    width: 100%;
+    height: 880px;
+    margin: 0 auto;
+  }
+  .semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+    font-size: 3rem;
+  }
+  .semifooter .videos {
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 12px;
+  }
+  .semifooter .videos iframe {
+    width: 90%;
+    height: 200px;
+  }
+}
+@media all and (max-width: 1027px) {
+  .semifooter {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+  }
+  .semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+    font-size: 3rem;
+  }
+  .semifooter .videos {
+    align-items: center;
+  }
+  .semifooter .videos iframe {
+    width: 30%;
+    height: 200px;
+  }
+}
 .inscripciones {
   width: 100%;
   padding: 32px 0;
@@ -1434,7 +1622,13 @@ footer ul li:first-child {
   text-align: center;
 }
 .inscripciones .content .opcionesInscripcion .circleCard div.imagenCard {
+  width: 250px;
   height: 140px;
+  margin: 0 auto;
+}
+.inscripciones .content .opcionesInscripcion .circleCard div.imagenCard img {
+  max-width: 250px;
+  max-height: 140px;
 }
 .inscripciones .content .opcionesInscripcion .circleCard div.textoCard {
   height: 120px;
@@ -1471,6 +1665,49 @@ footer ul li:first-child {
 }
 .subfooter img {
   width: 100%;
+}
+
+.thanks .content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 120px 0;
+  text-align: center;
+}
+.thanks .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+}
+.thanks .content p {
+  font-size: 1.2rem;
+}
+
+.oraciones {
+  width: 100%;
+  padding: 50px 0 38px 0;
+}
+.oraciones .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.oraciones .content h3 {
+  font-size: 3.12rem;
+  font-family: "PascuaJoven18";
+}
+.oraciones .content .accordion-item {
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+.oraciones .content .accordion-button {
+  font-weight: 700;
+}
+.oraciones .content .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #12878B;
+}
+.oraciones .content .accordion-button:focus {
+  border-color: white;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,8 @@
-#recursos {
-    background-image: url("../images/headers/recursos.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .recursos {
 
     width: 100%;
-    padding: 32px 0;
+    padding: 50px 0;
     background-image: url("../images/recursos-brackground-1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +12,7 @@
         margin: 0 auto;
 
         .sectionContent {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
             border-radius: 34px;
@@ -27,6 +22,7 @@
             img {
                 display: block;
                 margin: 0 auto;
+                width: 80%;
             }
 
             .options {
@@ -52,21 +48,28 @@
 
         }
 
+        .sectionContentColumns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            column-gap: 40px;
+        }
+
         .sectionContent2 {
-            width: 90%;
-            margin: 124px auto 0 auto;
+            width: 100%;
+            margin: 40px 0 0 0;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
             border-radius: 34px;
-            padding: 64px;
+            padding: 16px;
             background-color: $white;
 
             display: flex;
-            flex-flow: row-reverse wrap;
-            justify-content: space-between;
+            flex-flow: column wrap;
+            justify-content: space-around;
             align-items: center;
 
             .image {
-                width: 60%;
+                width: 100%;
 
                 img {
                     width: 100%;
@@ -74,16 +77,80 @@
             }
 
             .textContent {
-                width: 35%;
+                width: 65%;
                 text-align: center;
-            }
-        }
+                margin-top: 12px;
+                
+                h2 {
+                    font-family: "PascuaJoven18";
+                    font-size: 3rem;
+                }
 
-        .recursosContent {
-            flex-direction: row;
+                p {
+                    height: 55px;
+                }
+            }
         }
 
     }
 
     
 }
+
+@media all and (max-width: 582px) {
+
+    .recursos {
+    
+        .content {
+            width: 80%;
+    
+            .sectionContent {
+
+    
+                img {
+                    width: 100%;
+                }
+    
+                .options {
+    
+                    p {
+                        font-size: 2rem;
+                        line-height: 30px;
+
+                    }
+    
+                    a {
+                        width: 200px;
+                        font-size: 16px;
+                    }
+                }
+    
+            }
+    
+            .sectionContentColumns {
+                grid-template-columns: 1fr;
+
+                .textContent {
+                    
+                    h2 {
+                        font-family: "PascuaJoven18";
+                        font-size: 2rem;
+                    }
+    
+                    p {
+                        height: 55px;
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+    
+
+               
+            
+    
+        }
+    
+        
+    }
+} // fin media
