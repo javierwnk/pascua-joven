@@ -71,6 +71,8 @@ $(document).ready(function () {
 
     })
 
+    if(distance2 <= 0) { document.getElementById("inscripcionTexto").innerText = "¡Selecciona tu rol para inscribirte!"}
+
 
     document.getElementById("inscripcionesOpciones").innerHTML = html
 
