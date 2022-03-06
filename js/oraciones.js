@@ -25,7 +25,7 @@ let oraciones = [
         Amén.`
     },
     {
-        title: "Oración de Nuestra Señora del Buen Viaje.",
+        title: "Oración de Nuestra Señora del Buen Viaje",
         description: `Inmaculada Virgen María<br>
         Madre de Dios y Madre nuestra<br>
         Señora del Buen Viaje<br>
@@ -48,13 +48,13 @@ let oraciones = [
         Amen.`        
     },
     {
-        title: "Oración a San Cayetano.",
+        title: "Oración a San Cayetano",
         description: `Glorioso San Cayetano, aclamado por todos los pueblos padre de providencia porque socorres con grandes milagros a cuantos te invocan en sus necesidades: acudo a tu altar, suplicando que presentes al Señor los deseos que confiadamente deposito en tus manos.<br><br>
         (Aquí se expresan las gracias que se desea obtener)<br><br>
         Haz que estas gracias, que ahora te pido, me ayuden a buscar siempre el Reino de Dios y su Justicia, sabiendo que Dios (que viste de hermosura las flores del campo y alimenta con largueza las aves del cielo) me dará las demás cosas por añadidura. Amén.`
     },
     {
-        title: "Oración al Inmaculado Corazón de María.",
+        title: "Oración al Inmaculado Corazón de María",
         description: `"Acuérdate, Nuestra Señora del Sagrado Corazón,<br>
         de las maravillas que el Señor hizo en ti:<br>
         Te eligió por madre y te quiso junto a su cruz.<br>
@@ -74,7 +74,7 @@ let oraciones = [
         
     },
     {
-        title: "Bendición Irlandesa.",
+        title: "Bendición Irlandesa",
         description: `«Que el camino salga a tu encuentro.<br><br>
         Que el viento siempre esté detrás de ti y la lluvia caiga suave sobre tus campos. Y hasta que volvamos a encontrar, que Dios te sostenga suavemente sobre la palma de su mano.<br><br>
         Recuerda siempre olvidar las cosas que te entristecieron, pero nunca olvides recordar aquellos que te alegraron.<br><br>
@@ -85,7 +85,7 @@ let oraciones = [
         Que Dios esté contigo y te bendiga, que veas a los hijos de tus hijos, que el infortunio te sea breve y te deje rico en bendiciones».`
     },
     {
-        title: "Oración de San Cupertino.",
+        title: "Oración de San Cupertino",
         description: `Querido San José de Cupertino,<br>
         purifica mi corazón,<br>
         transfórmalo y hazlo semejante al tuyo,<br>
@@ -129,7 +129,7 @@ let oraciones = [
         AMÉN`        
     },
     {
-        title: "Alma de Cristo.",
+        title: "Alma de Cristo",
         description: `Alma de Cristo, santifícame.<br>
         Cuerpo de Cristo, sálvame.<br>
         Sangre de Cristo, embriágame.<br>

@@ -373,7 +373,8 @@
     p {
         font-weight: 500;
         font-size: 20px;
-
+        color: $primary;
+        font-weight: 700;
     }
 }
 
@@ -958,5 +959,22 @@
         .desktop {
             display: none;
         }
+    }
+} // fin media
+
+@media all and (max-width: 425px) {
+    .redesContainer {
+        .redesContent {
+            .content {
+                .redes {
+                    .cardRedes {
+                        row-gap: 32px;
+                    }
+                }
+            
+            }
+            
+        }
+        
     }
 } // fin media

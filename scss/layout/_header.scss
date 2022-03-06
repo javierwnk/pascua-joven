@@ -18,12 +18,15 @@ header {
                     font-weight: 400;
                     font-size: 1.1rem;
                     transition: all 0.5s;
-                    font-family: 'M PLUS Rounded 1c', sans-serif;
                 }
                 
                 a:hover {
                     text-decoration: underline;
+                }
+
+                .inscripcionesHeader {
                     font-weight: 700;
+                    text-transform: uppercase;
                 }
             }
 

@@ -92,11 +92,13 @@ header nav ul li a {
   font-weight: 400;
   font-size: 1.1rem;
   transition: all 0.5s;
-  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 header nav ul li a:hover {
   text-decoration: underline;
+}
+header nav ul li .inscripcionesHeader {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media all and (min-width: 992px) {
@@ -133,6 +135,7 @@ footer {
 }
 footer .socialMedia p {
   text-align: left;
+  font-weight: 700;
 }
 footer .socialMedia ul {
   list-style-type: none;
@@ -532,6 +535,8 @@ footer ul li:first-child {
 .inscripcionesCirculos p {
   font-weight: 500;
   font-size: 20px;
+  color: #12878B;
+  font-weight: 700;
 }
 
 .recursosHome {
@@ -918,6 +923,11 @@ footer ul li:first-child {
   }
   .sectionPJ21 .desktop {
     display: none;
+  }
+}
+@media all and (max-width: 425px) {
+  .redesContainer .redesContent .content .redes .cardRedes {
+    row-gap: 32px;
   }
 }
 .historia, .donaciones {
@@ -1323,7 +1333,7 @@ footer ul li:first-child {
   text-decoration: none;
 }
 
-@media all and (max-width: 1495px) {
+@media all and (min-width: 835px) and (max-width: 1495px) {
   .contacto .content {
     width: 90%;
   }
@@ -1492,6 +1502,9 @@ footer ul li:first-child {
   width: 150px;
   align-self: center;
   cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  padding: 14px;
 }
 .galeria .content .galleryCard img {
   width: 100%;
@@ -1535,6 +1548,23 @@ footer ul li:first-child {
   height: 270px;
 }
 
+@media all and (max-width: 1027px) {
+  .semifooter {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+  }
+  .semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+    font-size: 3rem;
+  }
+  .semifooter .videos {
+    align-items: center;
+  }
+  .semifooter .videos iframe {
+    width: 30%;
+    height: 200px;
+  }
+}
 @media all and (max-width: 582px) {
   .galeria .content {
     display: grid;
@@ -1571,23 +1601,6 @@ footer ul li:first-child {
   }
   .semifooter .videos iframe {
     width: 90%;
-    height: 200px;
-  }
-}
-@media all and (max-width: 1027px) {
-  .semifooter {
-    width: 100%;
-    height: 480px;
-    margin: 0 auto;
-  }
-  .semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
-    font-size: 3rem;
-  }
-  .semifooter .videos {
-    align-items: center;
-  }
-  .semifooter .videos iframe {
-    width: 30%;
     height: 200px;
   }
 }

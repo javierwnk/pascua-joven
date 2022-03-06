@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./js/slide/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="shortcut icon" href="./mages/favicon.ico">
 
 </head>
 
@@ -25,12 +25,12 @@ $mensaje = $_POST ['message'];
 $mimail="pascuajovenmoron@gmail.com";
 
 $cuerpoemail = "Ha recibido una consulta de ".$nya."\r\n"."Email: ".$email."\r\n"."Telefono de contacto: ".$phone."\r\n"."Mensaje: ".$mensaje;
-$cuerpoenvio = "Se ha enviado su consulta a Pascua Joven Morón "."\r\n"."Mensaje: ".$mensaje."\r\n"."Le responderemos a la brevedad"."\r\n"."Por favor, no responda este mensaje";
+$cuerpoenvio = "Se ha enviado su consulta a Pascua Joven Moron "."\r\n"."Mensaje: ".$mensaje."\r\n"."Le responderemos a la brevedad"."\r\n"."Por favor, no responda este mensaje";
 $respuesta ="From: $nya <$email>";
-$respuestaenvio ="From: Pascua Joven Morón <pascuajovenmoron@gmail.com>";
+$respuestaenvio ="From: Pascua Joven Moron <pascuajovenmoron@gmail.com>";
 
 mail ($mimail, "Ha recido una nueva consulta", $cuerpoemail, $respuesta);
-mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $respuestaenvio);
+mail ($email, "Recibimos tu consulta - Pascua Joven Moron", $cuerpoenvio, $respuestaenvio);
 ?>
 
 
@@ -71,7 +71,7 @@ mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $resp
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="inscripciones.html">Inscripciones</a>
+                            <a class="nav-link inscripcionesHeader" href="inscripciones.html">Inscripciones</a>
                         </li>
                     </ul>
                 </div>
@@ -97,7 +97,10 @@ mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $resp
 
         </div>
 
-        
+        <div class="sectionPJ21">
+            <video class="desktop" autoplay loop muted src="./images/video-lemas-desktop.mp4"></video>
+            <video class="mobile" autoplay loop muted src="./images/video-lemas-mobile.mp4"></video>
+        </div>
 
     </main>
 
@@ -123,7 +126,7 @@ mail ($email, "Recibimos tu consulta - Mananiquies Agustin", $cuerpoenvio, $resp
             <li>Explorá</li>
             <li><a href="nosotros.html">Historia de Pascua Joven Morón</a></li>
             <li><a href="recursos.html">Recursos descargables</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="galeria.html">Galería</a></li>
         </ul>
 
         <ul>
