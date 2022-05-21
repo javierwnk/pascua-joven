@@ -75,6 +75,56 @@
   background: transparent;
 }
 
+.warningIncripciones {
+  margin: 60px auto 0 auto;
+}
+.warningIncripciones h2, .warningIncripciones .hero .lema h1, .warningIncripciones .hero .title h1, .hero .lema .warningIncripciones h1, .hero .title .warningIncripciones h1 {
+  font-family: "PascuaJoven18";
+  text-align: center;
+}
+.warningIncripciones .warningInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+.warningIncripciones .warningInfo img {
+  width: 48%;
+}
+
+#warningIndex {
+  margin: 0 auto 24px auto;
+  width: 80%;
+}
+#warningIndex h2, #warningIndex .hero .lema h1, #warningIndex .hero .title h1, .hero .lema #warningIndex h1, .hero .title #warningIndex h1 {
+  font-size: 3.5rem;
+}
+
+@media all and (max-width: 768px) {
+  #warningIndex {
+    width: 90%;
+  }
+  #warningIndex h2, #warningIndex .hero .lema h1, #warningIndex .hero .title h1, .hero .lema #warningIndex h1, .hero .title #warningIndex h1 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 582px) {
+  .warningIncripciones .warningInfo {
+    column-gap: 0px;
+    row-gap: 12px;
+  }
+  .warningIncripciones .warningInfo img {
+    width: 100%;
+  }
+
+  #warningIndex {
+    width: 90%;
+  }
+  #warningIndex h2, #warningIndex .hero .lema h1, #warningIndex .hero .title h1, .hero .lema #warningIndex h1, .hero .title #warningIndex h1 {
+    font-size: 42px;
+  }
+}
 header {
   width: 100%;
   background: #FFF;
@@ -979,6 +1029,7 @@ footer ul li:first-child {
 }
 .logoInfo div video {
   max-height: 450px;
+  -webkit-filter: brightness(108.5%);
 }
 .logoInfo .text {
   width: 30%;

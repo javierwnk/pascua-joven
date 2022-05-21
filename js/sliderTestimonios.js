@@ -25,7 +25,7 @@ let testimonios = [
         nombre: "Ignacio Rodríguez Andrade"
     },
     {
-        rol: "Participante virtual",
+        rol: "Streaming",
         mensaje: `Tuve la dicha de compartir y colaborar personalmente 15 años en PJ. Cambié de nivel pero seguí viniendo en algunos momentos… Y fue justo cuando comenzaron con el streaming. Desde ese momento hice que cientos de personas sepan lo que es "vivir" Pascua Joven… Docentes, amigos, personas de España, Usa, Colombia. Es vivir la PJ desde adentro en cada momento. Recuerdo que el primer año que hubo streaming estaba muy amargada porque estaba en cama y no me resignaba a no participar, y finalmente pude! De otra forma, pero llegué por este medio a todos mis contactos de face que vivieron, rezaron, lloraron y bailaron junto a cada jóven. El secreto… El streaming que nos une ya, al mundo. Rezo por ustedes que llenan mi alma de esperanza y renuevan mi fe!`,
         nombre: "Cristina Ana Castiñeiras"
     },
