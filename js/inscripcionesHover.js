@@ -38,7 +38,7 @@ let inscripcionesOpciones = [{
 }]
 
 // Variable que setea el tiempo que debe habilitarse la inscripción
-var countDown2 = new Date("Mar 8, 2022 00:00:00").getTime();
+var countDown2 = new Date("Apr 9, 2023 00:00:00").getTime();
 
 // Get today's date and time
 var now = new Date().getTime();
@@ -60,8 +60,8 @@ $(document).ready(function () {
             <p>${opcion.explicacion}</p>
         </div>`
 
-    if(distance2 < 0) { // cambiar luego por un menor para cuando inicien inscripciones
-        html += `<button disabled>Inscripciones Cerradas</button>
+    if(distance2 > 0) { // cambiar luego por un menor para cuando inicien inscripciones
+        html += `<button disabled>Proximamente</button>
         </div>`
     } else {
         html += `<a href="${opcion.link}" target="_blank">Inscribirse</a>

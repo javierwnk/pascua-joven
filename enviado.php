@@ -131,7 +131,7 @@ mail ($email, "Recibimos tu consulta - Pascua Joven Moron", $cuerpoenvio, $respu
 
         <ul>
             <li>Formá parte</li>
-            <li><a href="inscripciones.html">Inscripciones 2022</a></li>
+            <li><a href="inscripciones.html">Inscripciones 2023</a></li>
             <li><a href="donar.html">Donaciones</a></li>
         </ul>
 
