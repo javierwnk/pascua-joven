@@ -1,0 +1,1751 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+@font-face {
+  font-family: "PascuaJoven18";
+  src: url("../images/fonts/PascuaJoven18.woff2") format("woff2"), url("../images/fonts/PascuaJoven18.woff") format("woff"), url("../images/fonts/PascuaJoven18.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MandelaScript";
+  src: url("../images/fonts/MandelaScriptPersonalUse.woff2") format("woff2"), url("../images/fonts/MandelaScriptPersonalUse.woff") format("woff"), url("../images/fonts/MandelaScriptPersonalUse.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inscriptionBtn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 60px;
+  font-size: 2rem;
+  background: #12878B;
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+
+.inscriptionBtn:hover {
+  color: #12878B;
+  background: #FFF;
+}
+
+.btnPrimary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #D1E872;
+  color: #3C3C3C;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: space-between;
+}
+.splide__slide .splide__image img {
+  max-width: 400px;
+  margin-left: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px #a7a7a7;
+}
+.splide__slide .splide__text {
+  display: flex;
+  flex-flow: column;
+  margin-left: 40px;
+}
+.splide__slide .splide__text p:first-child {
+  font-size: 1.2rem;
+}
+
+.splide__arrow {
+  background: transparent;
+}
+
+.warningIncripciones {
+  margin: 60px auto 0 auto;
+}
+.warningIncripciones h2, .warningIncripciones .hero .lema h1, .warningIncripciones .hero .title h1, .hero .lema .warningIncripciones h1, .hero .title .warningIncripciones h1 {
+  font-family: "PascuaJoven18";
+  text-align: center;
+}
+.warningIncripciones .warningInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+.warningIncripciones .warningInfo img {
+  width: 48%;
+}
+
+#warningIndex {
+  margin: 0 auto 24px auto;
+  width: 80%;
+}
+#warningIndex h2, #warningIndex .hero .lema h1, #warningIndex .hero .title h1, .hero .lema #warningIndex h1, .hero .title #warningIndex h1 {
+  font-size: 3.5rem;
+}
+
+@media all and (max-width: 768px) {
+  #warningIndex {
+    width: 90%;
+  }
+  #warningIndex h2, #warningIndex .hero .lema h1, #warningIndex .hero .title h1, .hero .lema #warningIndex h1, .hero .title #warningIndex h1 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 582px) {
+  .warningIncripciones .warningInfo {
+    column-gap: 0px;
+    row-gap: 12px;
+  }
+  .warningIncripciones .warningInfo img {
+    width: 100%;
+  }
+  #warningIndex {
+    width: 90%;
+  }
+  #warningIndex h2, #warningIndex .hero .lema h1, #warningIndex .hero .title h1, .hero .lema #warningIndex h1, .hero .title #warningIndex h1 {
+    font-size: 42px;
+  }
+}
+header {
+  width: 100%;
+  background: #FFF;
+}
+header nav {
+  width: 90%;
+  margin: 0 auto;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #12878B !important;
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav ul li .inscripcionesHeader {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 992px) {
+  #navbarNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media all and (max-width: 1144px) {
+  header nav ul li a {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 1091px) {
+  header nav ul li {
+    margin: 0 12px;
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 221px;
+  text-align: center;
+  background-color: #0B5759;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-content: center;
+  color: #FFF;
+}
+footer .socialMedia p {
+  text-align: left;
+  font-weight: 700;
+}
+footer .socialMedia ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+footer .socialMedia ul li a {
+  color: #FFF;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+footer .socialMedia ul li a:hover {
+  color: #D1E872;
+}
+footer ul {
+  list-style: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+footer ul a:hover {
+  color: #D1E872;
+}
+footer ul li {
+  text-align: center;
+  margin: 5px 0;
+}
+footer ul li:first-child {
+  font-weight: 900;
+}
+
+@media all and (max-width: 990px) {
+  footer {
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  footer .socialMedia p {
+    text-align: center;
+  }
+  footer ul {
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+}
+@media all and (max-width: 582px) {
+  footer {
+    height: 600px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  footer .socialMedia p {
+    text-align: center;
+  }
+  footer ul {
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+}
+.subheader {
+  height: 440px;
+  width: 100%;
+  margin-bottom: 90px;
+}
+.subheader h1 {
+  display: none;
+}
+.subheader img {
+  width: 100%;
+}
+.subheader .desktop {
+  display: block;
+}
+.subheader .mobile {
+  display: none;
+}
+
+@media all and (max-width: 1854px) {
+  .subheader {
+    margin-bottom: 0px;
+    height: fit-content;
+  }
+}
+@media all and (max-width: 582px) {
+  .subheader .desktop {
+    display: none;
+  }
+  .subheader .mobile {
+    display: block;
+  }
+}
+.hero {
+  width: 100%;
+  height: 620px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.hero .timer {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 60px;
+  border: 4px solid #D1E872;
+  border-radius: 20px;
+}
+.hero .timer .count {
+  width: 220px;
+  color: #FFF;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
+  font-size: 7rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.hero .lema h2, .hero .title h2, .hero .lema h1, .hero .title h1 {
+  font-family: "MandelaScript";
+  font-size: 5rem;
+  text-align: center;
+  color: #FFF;
+  margin-top: 60px;
+}
+.hero .lema h1, .hero .title h1 {
+  margin-top: 0;
+  font-size: 40px;
+  color: #D1E872;
+}
+.hero .title h2, .hero .title h1 {
+  font-size: 5rem;
+  font-family: "PascuaJoven18";
+}
+
+.donacionesHome {
+  height: fit-content;
+  padding: 60px 0px;
+}
+.donacionesHome h2, .donacionesHome .hero .lema h1, .hero .lema .donacionesHome h1, .donacionesHome .hero .title h1, .hero .title .donacionesHome h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "PascuaJoven18";
+}
+.donacionesHome h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "PascuaJoven18";
+}
+.donacionesHome .donacionesFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px rgb(167, 167, 167);
+  padding: 50px;
+  border-radius: 50px;
+}
+.donacionesHome .donacionesFlex .image {
+  width: 50%;
+  max-height: 450px;
+}
+.donacionesHome .donacionesFlex .image .carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease-out !important;
+}
+.donacionesHome .donacionesFlex .image img {
+  width: 100%;
+  border: 4px solid #FFF;
+  border-radius: 12px;
+}
+.donacionesHome .donacionesFlex .text {
+  width: 40%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.donacionesHome .donacionesFlex button {
+  background-color: #D1E872;
+  width: 360px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 12px auto;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+.donacionesHome .donacionesFlex button:hover {
+  cursor: pointer;
+  color: #3C3C3C;
+}
+
+.juego {
+  height: fit-content;
+  padding: 40px 0px;
+}
+.juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "PascuaJoven18";
+}
+.juego .aboutFlex, .juego .gameFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.juego .aboutFlex .image, .juego .gameFlex .image {
+  width: 50%;
+  max-height: 500px;
+}
+.juego .aboutFlex .image video, .juego .gameFlex .image video {
+  width: 100%;
+  border: 4px solid #FFF;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgb(167, 167, 167);
+}
+.juego .aboutFlex .text, .juego .gameFlex .text {
+  width: 40%;
+  font-size: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.juego .aboutFlex button, .juego .gameFlex button {
+  background-color: #D1E872;
+  width: 280px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 12px auto;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+.juego .aboutFlex button a, .juego .gameFlex button a {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+.juego .aboutFlex button:hover, .juego .gameFlex button:hover {
+  cursor: pointer;
+  color: #3C3C3C;
+}
+.juego .aboutFlex button:hover a, .juego .gameFlex button:hover a {
+  color: #3C3C3C;
+}
+
+.testimonios {
+  height: 500px;
+  padding: 50px 0px;
+  background-image: url("../images/final.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.testimonios .container {
+  width: 50%;
+  background-color: #12878B;
+  border-radius: 68px 0 0 68px;
+}
+.testimonios .splide {
+  padding: 40px 0px;
+  height: fit-content;
+  margin: 0;
+  color: #FFF;
+}
+.testimonios .splide .splide__track {
+  width: 90%;
+  margin: 0 auto;
+}
+.testimonios .rol {
+  font-weight: bold;
+}
+.testimonios .name {
+  font-style: italic;
+}
+
+#redesBackground {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/spotify.jpeg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.redesContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 25px 0 0 0;
+}
+.redesContainer h2, .redesContainer .hero .lema h1, .hero .lema .redesContainer h1, .redesContainer .hero .title h1, .hero .title .redesContainer h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.5rem;
+  text-align: center;
+  color: #FFF;
+}
+.redesContainer ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.redesContainer ul li {
+  display: inline-block;
+  font-family: "PascuaJoven18";
+  text-align: center;
+  width: 170px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0px 5px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.redesContainer ul li.option:hover {
+  background: #D1E872;
+  border: 1px solid #D1E872;
+  color: black;
+  cursor: pointer;
+}
+.redesContainer .redesContent {
+  height: 500px;
+  width: 100%;
+  color: #FFF;
+}
+.redesContainer .redesContent .content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+}
+.redesContainer .redesContent .content iframe {
+  width: 600px;
+  height: 400px;
+}
+.redesContainer .redesContent .content h3 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.5rem;
+}
+.redesContainer .redesContent .content iframe {
+  padding-top: 25px;
+}
+.redesContainer .redesContent .content p {
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+.redesContainer .redesContent .content p a {
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+}
+.redesContainer .redesContent .content p a:hover {
+  text-decoration: underline;
+}
+.redesContainer .redesContent .content .redes {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 124px;
+}
+.redesContainer .redesContent .content .redes .cardRedes {
+  width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 64px;
+}
+.redesContainer .redesContent .content .redes .cardRedes img {
+  width: 200px;
+}
+
+.inscripcionesCirculos {
+  text-align: center;
+  padding: 40px 0 50px 0;
+  background: #FFF;
+  color: #3C3C3C;
+}
+.inscripcionesCirculos h2, .inscripcionesCirculos .hero .lema h1, .hero .lema .inscripcionesCirculos h1, .inscripcionesCirculos .hero .title h1, .hero .title .inscripcionesCirculos h1 {
+  font-family: "PascuaJoven18";
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.inscripcionesCirculos p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #12878B;
+  font-weight: 700;
+}
+
+.recursosHome {
+  height: fit-content;
+  padding: 50px 0;
+}
+.recursosHome h2, .recursosHome .hero .lema h1, .hero .lema .recursosHome h1, .recursosHome .hero .title h1, .hero .title .recursosHome h1 {
+  font-size: 3.5rem;
+  font-family: "PascuaJoven18";
+  text-align: center;
+}
+
+.circleSection {
+  height: fit-content;
+  padding: 20px 0 0 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+.circleSection .pointer {
+  cursor: pointer;
+}
+.circleSection .circleCard {
+  width: 250px;
+  height: fit-content;
+  text-align: center;
+  font-size: 5rem;
+}
+.circleSection .circleCard .cardLogo {
+  width: 250px;
+  height: 140px;
+}
+.circleSection .circleCard .cardLogo img {
+  max-width: 250px;
+  max-height: 140px;
+}
+.circleSection .circleCard .circle {
+  width: 250px;
+  height: 140px;
+}
+.circleSection .circleCard .circle img {
+  max-width: 250px;
+  max-height: 140px;
+}
+.circleSection .circleCard .show {
+  height: 250px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.circleSection .circleCard .info {
+  background-color: #12878B;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.circleSection .circleCard .info p {
+  line-height: 18.92px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #FFF;
+}
+.circleSection .circleCard p {
+  margin-top: 20px;
+  font-family: "PascuaJoven18";
+  font-size: 1.7rem;
+}
+.circleSection .circleCard a, .circleSection .circleCard button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 40px;
+  margin: 5px auto;
+  background-color: #D1E872;
+  color: #3C3C3C;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0;
+}
+.circleSection .circleCard button {
+  border: 0;
+}
+.circleSection .circleCard button:disabled {
+  background: #DFDFDF;
+  color: #C2C2C2;
+}
+.circleSection .circleCardRecursos {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding: 32px 12px 12px 12px;
+}
+
+.sectionPJ21 {
+  width: 100%;
+  height: fit-content;
+}
+.sectionPJ21 .mobile {
+  display: none;
+}
+
+.sectionPJ21 video {
+  width: 100%;
+  height: fit-content;
+}
+
+@media all and (max-width: 1012px) {
+  .circleSection {
+    padding: 80px 0 0 0px;
+  }
+}
+@media all and (max-width: 987px) {
+  .hero .timer .count {
+    width: 160px;
+  }
+  .hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
+    font-size: 6rem;
+  }
+  .hero .lema h2, .hero .title h2, .hero .title h1, .hero .lema h1 {
+    font-size: 4rem;
+  }
+  .testimonios {
+    height: 450px;
+  }
+  .testimonios .container {
+    width: 80%;
+  }
+  .donacionesHome h2, .donacionesHome .hero .lema h1, .hero .lema .donacionesHome h1, .donacionesHome .hero .title h1, .hero .title .donacionesHome h1 {
+    font-size: 4rem;
+  }
+  .donacionesHome h3 {
+    font-size: 1.5rem;
+  }
+  .donacionesHome .donacionesFlex .text {
+    font-size: 1.2rem;
+  }
+  .donacionesHome .donacionesFlex button {
+    width: 250px;
+  }
+  .redesContainer .redesContent .content .redes {
+    width: 100%;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes {
+    width: 180px;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes img {
+    width: inherit;
+  }
+  .juego {
+    height: 420px;
+  }
+  .juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
+    font-size: 4rem;
+  }
+}
+@media all and (max-width: 782px) {
+  .hero {
+    height: 550px;
+  }
+  .hero .timer .count {
+    width: 110px;
+    font-size: 1rem;
+  }
+  .hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
+    font-size: 4rem;
+  }
+  .hero .lema h2, .hero .title h2, .hero .title h1, .hero .lema h1 {
+    font-size: 3rem;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes {
+    width: 140px;
+  }
+  .redesContainer .redesContent .content h3 {
+    font-size: 2rem;
+  }
+  .redesContainer .redesContent .content iframe {
+    width: 80%;
+  }
+  .testimonios .container {
+    width: 100%;
+  }
+  .inscripcionesCirculos {
+    padding: 50px 0;
+  }
+  .inscripcionesCirculos h2, .inscripcionesCirculos .hero .lema h1, .hero .lema .inscripcionesCirculos h1, .inscripcionesCirculos .hero .title h1, .hero .title .inscripcionesCirculos h1 {
+    font-size: 42px;
+  }
+  .inscripcionesCirculos p {
+    font-size: 16px;
+  }
+  .recursosHome {
+    padding: 50px;
+  }
+  .recursosHome h2, .recursosHome .hero .lema h1, .hero .lema .recursosHome h1, .recursosHome .hero .title h1, .hero .title .recursosHome h1 {
+    font-size: 42px;
+  }
+  .juego {
+    height: 300px;
+    padding: 50px 0px;
+  }
+  .juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
+    font-size: 3rem;
+  }
+  .juego .aboutFlex .text, .juego .gameFlex .text {
+    font-size: 1rem;
+  }
+  .juego .aboutFlex button, .juego .gameFlex button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .preInscripcion p {
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+}
+@media all and (max-width: 766px) {
+  .donacionesHome h2, .donacionesHome .hero .lema h1, .hero .lema .donacionesHome h1, .donacionesHome .hero .title h1, .hero .title .donacionesHome h1 {
+    font-size: 4rem;
+  }
+  .donacionesHome h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .donacionesHome .donacionesFlex {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+  }
+  .donacionesHome .donacionesFlex .image {
+    width: 100%;
+  }
+  .donacionesHome .donacionesFlex .text {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .donacionesHome .donacionesFlex button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 582px) {
+  .hero {
+    width: 100%;
+    height: 600px;
+    flex-flow: column nowrap;
+  }
+  .hero .timer {
+    width: 90%;
+    flex-flow: row wrap;
+    padding: 20px 20px;
+  }
+  .hero .timer .count {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .hero .timer .count #dias, .hero .timer .count #horas, .hero .timer .count #minutos, .hero .timer .count #segundos {
+    font-size: 4rem;
+  }
+  .hero .lema h2, .hero .title h2, .hero .lema h1, .hero .title h1 {
+    font-family: "MandelaScript";
+    font-size: 2rem;
+  }
+  .hero .lema h1, .hero .title h1 {
+    font-size: 40px;
+    color: #D1E872;
+  }
+  .hero .title h2, .hero .title h1 {
+    font-size: 2rem;
+    font-family: "PascuaJoven18";
+  }
+  .testimonios {
+    height: fit-content;
+    padding: 10px 0px;
+    background-image: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .testimonios .container {
+    width: 100%;
+    border-radius: 0;
+  }
+  .donacionesHome {
+    padding: 50px 0px;
+  }
+  .donacionesHome .donacionesFlex {
+    padding: 20px;
+  }
+  .redesContainer h2, .redesContainer .hero .lema h1, .hero .lema .redesContainer h1, .redesContainer .hero .title h1, .hero .title .redesContainer h1 {
+    font-size: 2rem;
+  }
+  .redesContainer ul {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 12px;
+  }
+  .redesContainer .redesContent .content iframe {
+    width: 90%;
+    height: 400px;
+  }
+  .redesContainer .redesContent .content h3 {
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+  .redesContainer .redesContent .content iframe {
+    padding-top: 25px;
+  }
+  .redesContainer .redesContent .content p {
+    font-size: 1rem;
+  }
+  .redesContainer .redesContent .content .redes {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 80px;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes {
+    width: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 64px;
+  }
+  .redesContainer .redesContent .content .redes .cardRedes img {
+    width: 100%;
+  }
+  .juego {
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  .juego h2, .juego .hero .lema h1, .hero .lema .juego h1, .juego .hero .title h1, .hero .title .juego h1 {
+    font-size: 2.5rem;
+  }
+  .juego .aboutFlex, .juego .gameFlex {
+    flex-flow: column wrap;
+  }
+  .juego .aboutFlex .image, .juego .gameFlex .image {
+    width: 100%;
+    max-height: 500px;
+    margin-top: 12px;
+  }
+  .juego .aboutFlex .text, .juego .gameFlex .text {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .juego .aboutFlex button, .juego .gameFlex button {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .preInscripcion p {
+    font-family: "PascuaJoven18";
+    font-size: 24px;
+    color: #12878B;
+    letter-spacing: 3px;
+  }
+  .sectionPJ21 .mobile {
+    display: block;
+  }
+  .sectionPJ21 .desktop {
+    display: none;
+  }
+}
+@media all and (max-width: 425px) {
+  .redesContainer .redesContent .content .redes .cardRedes {
+    row-gap: 32px;
+  }
+}
+.historia, .donaciones {
+  width: 100%;
+  padding: 32px 0;
+  background-image: url("../images/nosotros-background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.historia .content, .donaciones .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.historia .content h2, .donaciones .content h2, .historia .content .hero .lema h1, .donaciones .content .hero .lema h1, .hero .lema .historia .content h1, .hero .lema .donaciones .content h1, .historia .content .hero .title h1, .donaciones .content .hero .title h1, .hero .title .historia .content h1, .hero .title .donaciones .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+}
+.historia .content p, .donaciones .content p {
+  color: #1F3031;
+  text-align: justify;
+}
+
+.sliderLemas {
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.sliderLemas .carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logoInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+.logoInfo div {
+  max-height: 450px;
+}
+.logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+  text-transform: uppercase;
+}
+.logoInfo div p {
+  width: 90%;
+}
+.logoInfo div video {
+  max-height: 450px;
+  -webkit-filter: brightness(108.5%);
+}
+.logoInfo .text {
+  width: 30%;
+}
+
+.recuerdos img {
+  width: 100%;
+}
+.recuerdos .pope {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 64px;
+}
+.recuerdos .pope div {
+  max-height: 440px;
+}
+.recuerdos .pope div img {
+  max-height: 440px;
+}
+.recuerdos .pope .text {
+  width: 30%;
+}
+.recuerdos .videoPope {
+  width: 80%;
+  margin: 64px auto 24px auto;
+}
+.recuerdos .videoPope p {
+  font-size: 1rem;
+  font-family: var(--bs-body-font-family);
+}
+.recuerdos .videoPope p:first-child {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+  margin: 0;
+  line-height: 40px;
+}
+
+@media all and (max-width: 769px) {
+  #nosotros {
+    background-image: url("../images/headers/nosotros.png");
+  }
+  .sliderLemas .carousel {
+    width: 100%;
+  }
+  .logoInfo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .logoInfo div {
+    max-height: 400px;
+  }
+  .logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .logoInfo div p {
+    width: 90%;
+  }
+  .logoInfo div video {
+    max-height: 400px;
+  }
+  .logoInfo .text {
+    width: 40%;
+  }
+  .recuerdos img {
+    width: 100%;
+  }
+  .recuerdos .pope {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 64px;
+  }
+  .recuerdos .pope div {
+    max-height: 550px;
+  }
+  .recuerdos .pope div img {
+    max-height: 250px;
+  }
+  .recuerdos .pope .text {
+    width: 30%;
+  }
+  .recuerdos .videoPope {
+    width: 80%;
+    margin: 64px auto 24px auto;
+  }
+  .recuerdos .videoPope p {
+    font-size: 1rem;
+    font-family: var(--bs-body-font-family);
+  }
+  .recuerdos .videoPope p:first-child {
+    font-family: "PascuaJoven18";
+    font-size: 3.12rem;
+    margin: 0;
+    line-height: 40px;
+  }
+  .recuerdos .videoPope iframe {
+    height: 400px;
+  }
+}
+@media all and (max-width: 582px) {
+  #nosotros {
+    background-image: url("../images/headers/nosotros.png");
+  }
+  .sliderLemas .carousel {
+    width: 100%;
+  }
+  .logoInfo {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .logoInfo div {
+    width: 90%;
+    margin: 0 auto;
+    max-height: none;
+  }
+  .logoInfo div h2, .logoInfo div .hero .lema h1, .hero .lema .logoInfo div h1, .logoInfo div .hero .title h1, .hero .title .logoInfo div h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logoInfo div p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logoInfo div video {
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .logoInfo .text {
+    width: inherit;
+  }
+  .recuerdos img {
+    width: 100%;
+  }
+  .recuerdos .pope {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 32px;
+  }
+  .recuerdos .pope div {
+    max-height: none;
+    width: 90%;
+    margin: 12px auto;
+  }
+  .recuerdos .pope div img {
+    max-height: 440px;
+  }
+  .recuerdos .pope .text {
+    width: 90%;
+  }
+  .recuerdos .videoPope {
+    width: 80%;
+    margin: 64px auto 24px auto;
+  }
+  .recuerdos .videoPope p {
+    font-size: 1rem;
+    font-family: var(--bs-body-font-family);
+  }
+  .recuerdos .videoPope p:first-child {
+    font-family: "PascuaJoven18";
+    font-size: 3.12rem;
+    margin: 0;
+    line-height: 40px;
+  }
+  .recuerdos .videoPope iframe {
+    height: 200px;
+  }
+}
+.donaciones {
+  background-image: none;
+}
+.donaciones h2, .donaciones .hero .lema h1, .hero .lema .donaciones h1, .donaciones .hero .title h1, .hero .title .donaciones h1 {
+  text-align: left;
+}
+.donaciones img {
+  display: block;
+  margin: 0 auto;
+}
+
+.donationsType {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  row-gap: 24px;
+}
+.donationsType .miniCard {
+  width: 220px;
+  margin: 0 30px;
+  text-align: center;
+}
+.donationsType .miniCard .option {
+  min-height: 100px;
+  max-height: 100px;
+}
+.donationsType .miniCard .option img {
+  max-height: 100px;
+}
+.donationsType .miniCard .option h2, .donationsType .miniCard .option .hero .lema h1, .hero .lema .donationsType .miniCard .option h1, .donationsType .miniCard .option .hero .title h1, .hero .title .donationsType .miniCard .option h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  font-size: 4rem;
+  color: #136F72;
+  font-weight: 700;
+}
+.donationsType .miniCard p {
+  margin-top: 15px;
+  font-family: "PascuaJoven18";
+  font-size: 2rem;
+}
+
+.fraseDonaciones {
+  margin: 50px auto;
+  width: 60%;
+  color: #12878B;
+  text-align: center;
+}
+.fraseDonaciones h3 {
+  font-family: "PascuaJoven18";
+  font-size: 3rem;
+}
+.fraseDonaciones p {
+  font-family: "MandelaScript";
+  font-size: 2rem;
+}
+
+.thanks {
+  width: 100%;
+}
+.thanks img {
+  width: 100%;
+}
+
+@media all and (max-width: 1155px) {
+  .donationsType {
+    flex-flow: row wrap;
+  }
+}
+@media all and (max-width: 768px) {
+  .donationsType {
+    flex-flow: row wrap;
+  }
+  .fraseDonaciones {
+    width: 90%;
+  }
+}
+.faq {
+  width: 100%;
+  padding: 50px 0 38px 0;
+}
+.faq .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.faq .content .accordion-item {
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+.faq .content .accordion-button {
+  font-weight: 700;
+}
+.faq .content .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #12878B;
+}
+.faq .content .accordion-button:focus {
+  border-color: white;
+  box-shadow: none;
+}
+
+.contacto {
+  width: 100%;
+  padding: 32px 0;
+}
+.contacto .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.contacto .content .locationContent {
+  display: flex;
+  flex-flow: row wrap;
+}
+.contacto .content p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.contacto .content form {
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 12px;
+}
+.contacto .content form button {
+  border: none;
+}
+.contacto .content input, .contacto .content textarea {
+  border: 0.5px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+}
+.contacto .content .location {
+  margin-top: 64px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacto .content .location p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.contacto .content table {
+  width: 100%;
+  margin-top: 24px;
+  text-align: center;
+}
+.contacto .content table i {
+  color: #0B5759;
+  font-size: 32px;
+  margin: 0 5px;
+}
+.contacto .content table a {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+
+@media all and (min-width: 835px) and (max-width: 1495px) {
+  .contacto .content {
+    width: 90%;
+  }
+  .contacto .content form {
+    width: 40%;
+  }
+  .contacto .content .location {
+    width: 40%;
+  }
+  .contacto .content .location iframe {
+    width: 90%;
+  }
+}
+@media all and (max-width: 834px) {
+  .contacto .content {
+    width: 100%;
+  }
+  .contacto .content .locationContent {
+    flex-flow: column wrap;
+  }
+  .contacto .content form {
+    width: 90%;
+    margin: 50px auto;
+    flex-flow: column wrap;
+  }
+  .contacto .content .location {
+    margin-top: 16px;
+  }
+  .contacto .content .location iframe {
+    width: 90%;
+  }
+  .contacto .content .location p {
+    margin-top: 16px;
+  }
+  .contacto .content table {
+    display: none;
+  }
+}
+.recursos {
+  width: 100%;
+  padding: 50px 0;
+  background-image: url("../images/recursos-brackground-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recursos .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.recursos .content .sectionContent {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  padding: 64px;
+  background-color: #FFF;
+}
+.recursos .content .sectionContent img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.recursos .content .sectionContent .options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.recursos .content .sectionContent .options div {
+  margin-top: 32px;
+}
+.recursos .content .sectionContent .options p {
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "PascuaJoven18";
+  text-align: center;
+}
+.recursos .content .sectionContent .options a {
+  width: 200px;
+}
+.recursos .content .sectionContentColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.recursos .content .sectionContent2 {
+  width: 100%;
+  margin: 40px 0 0 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  padding: 16px;
+  background-color: #FFF;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.recursos .content .sectionContent2 .image {
+  width: 100%;
+}
+.recursos .content .sectionContent2 .image img {
+  width: 100%;
+}
+.recursos .content .sectionContent2 .textContent {
+  width: 65%;
+  text-align: center;
+  margin-top: 12px;
+}
+.recursos .content .sectionContent2 .textContent h2, .recursos .content .sectionContent2 .textContent .hero .lema h1, .hero .lema .recursos .content .sectionContent2 .textContent h1, .recursos .content .sectionContent2 .textContent .hero .title h1, .hero .title .recursos .content .sectionContent2 .textContent h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3rem;
+}
+.recursos .content .sectionContent2 .textContent p {
+  height: 55px;
+}
+
+@media all and (max-width: 582px) {
+  .recursos .content {
+    width: 80%;
+  }
+  .recursos .content .sectionContent img {
+    width: 100%;
+  }
+  .recursos .content .sectionContent .options p {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .recursos .content .sectionContent .options a {
+    width: 200px;
+    font-size: 16px;
+  }
+  .recursos .content .sectionContentColumns {
+    grid-template-columns: 1fr;
+  }
+  .recursos .content .sectionContentColumns .textContent h2, .recursos .content .sectionContentColumns .textContent .hero .lema h1, .hero .lema .recursos .content .sectionContentColumns .textContent h1, .recursos .content .sectionContentColumns .textContent .hero .title h1, .hero .title .recursos .content .sectionContentColumns .textContent h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2rem;
+  }
+  .recursos .content .sectionContentColumns .textContent p {
+    height: 55px;
+    font-size: 1rem;
+  }
+}
+.galeria {
+  width: 100%;
+  padding: 32px 0;
+}
+.galeria .content {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "h2 h2 h2" "card1 card2 card3" "card4 card5 card6" "card7 card8 card9";
+  justify-content: center;
+  align-content: center;
+  row-gap: 75px;
+  column-gap: 121px;
+}
+.galeria .content h2, .galeria .content .hero .lema h1, .hero .lema .galeria .content h1, .galeria .content .hero .title h1, .hero .title .galeria .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+  text-align: center;
+  grid-area: h2;
+}
+.galeria .content .galleryCard {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  padding: 14px;
+}
+.galeria .content .galleryCard img {
+  width: 100%;
+}
+.galeria .carrusel {
+  width: 70%;
+  margin: 0 auto;
+  display: none;
+}
+.galeria .carrusel p {
+  color: #D1E872;
+  font-weight: 700;
+  width: fit-content;
+}
+.galeria .carrusel p:hover {
+  cursor: pointer;
+}
+
+.semifooter {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 64px 0;
+  background-image: url("../images/galeria/semifooter.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+  text-align: center;
+  color: #FFF;
+}
+.semifooter .videos {
+  display: flex;
+  justify-content: space-around;
+  padding: 64px 0;
+}
+.semifooter .videos iframe {
+  width: 480px;
+  height: 270px;
+}
+
+@media all and (max-width: 1027px) {
+  .semifooter {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+  }
+  .semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+    font-size: 3rem;
+  }
+  .semifooter .videos {
+    align-items: center;
+  }
+  .semifooter .videos iframe {
+    width: 30%;
+    height: 200px;
+  }
+}
+@media all and (max-width: 582px) {
+  .galeria .content {
+    display: grid;
+    grid-template-areas: "h2 h2" "card1 card2" "card3 card4" "card5 card6" "card7 card8" "card9 card10";
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+  .galeria .content h2, .galeria .content .hero .lema h1, .hero .lema .galeria .content h1, .galeria .content .hero .title h1, .hero .title .galeria .content h1 {
+    font-family: "PascuaJoven18";
+    font-size: 2.5rem;
+    text-align: center;
+    grid-area: h2;
+  }
+  .galeria .content .galleryCard {
+    height: 120px;
+    width: 120px;
+  }
+  .galeria .carrusel {
+    width: 90%;
+  }
+  .semifooter {
+    width: 100%;
+    height: 880px;
+    margin: 0 auto;
+  }
+  .semifooter h2, .semifooter .hero .lema h1, .hero .lema .semifooter h1, .semifooter .hero .title h1, .hero .title .semifooter h1 {
+    font-size: 3rem;
+  }
+  .semifooter .videos {
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 12px;
+  }
+  .semifooter .videos iframe {
+    width: 90%;
+    height: 200px;
+  }
+}
+.inscripciones {
+  width: 100%;
+  padding: 32px 0;
+}
+.inscripciones .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.inscripciones .content h2, .inscripciones .content .hero .lema h1, .hero .lema .inscripciones .content h1, .inscripciones .content .hero .title h1, .hero .title .inscripciones .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 3.12rem;
+}
+.inscripciones .content p {
+  color: #1F3031;
+  text-align: justify;
+}
+.inscripciones .content .opcionesInscripcion {
+  height: fit-content;
+  padding: 40px 0 0 0px;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 50px;
+  justify-content: space-around;
+}
+.inscripciones .content .opcionesInscripcion .circleCard {
+  width: 360px;
+  height: fit-content;
+  text-align: center;
+}
+.inscripciones .content .opcionesInscripcion .circleCard div.imagenCard {
+  width: 250px;
+  height: 140px;
+  margin: 0 auto;
+}
+.inscripciones .content .opcionesInscripcion .circleCard div.imagenCard img {
+  max-width: 250px;
+  max-height: 140px;
+}
+.inscripciones .content .opcionesInscripcion .circleCard div.textoCard {
+  height: 120px;
+}
+.inscripciones .content .opcionesInscripcion .circleCard p.tituloInscripcion {
+  margin: 20px 0 0 0;
+  font-family: "PascuaJoven18";
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 700;
+}
+.inscripciones .content .opcionesInscripcion .circleCard p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.inscripciones .content .opcionesInscripcion .circleCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #D1E872;
+  color: #3C3C3C;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.subfooter {
+  width: 100%;
+}
+.subfooter img {
+  width: 100%;
+}
+
+.thanks .content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 120px 0;
+  text-align: center;
+}
+.thanks .content h1 {
+  font-family: "PascuaJoven18";
+  font-size: 4rem;
+}
+.thanks .content p {
+  font-size: 1.2rem;
+}
+
+.oraciones {
+  width: 100%;
+  padding: 50px 0 38px 0;
+}
+.oraciones .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.oraciones .content h3 {
+  font-size: 3.12rem;
+  font-family: "PascuaJoven18";
+}
+.oraciones .content .accordion-item {
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+.oraciones .content .accordion-button {
+  font-weight: 700;
+}
+.oraciones .content .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #12878B;
+}
+.oraciones .content .accordion-button:focus {
+  border-color: white;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */

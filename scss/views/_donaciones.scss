@@ -1,0 +1,105 @@
+
+
+.donaciones {
+    @extend .historia;
+    background-image: none;
+
+    h2 {
+        text-align: left;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.donationsType {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    row-gap: 24px;
+
+    .miniCard {
+        width: 220px;
+        margin: 0 30px;
+        text-align: center;
+
+        .option {
+            min-height: 100px;
+            max-height: 100px;
+
+            img {
+                max-height: 100px;
+            }
+            
+            h2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100px;
+                font-size: 4rem;
+                color: #136F72;
+                font-weight: 700;
+            }
+        }
+
+
+        p {
+            margin-top: 15px;
+            font-family: "PascuaJoven18";
+            font-size: 2rem;
+        }
+    }
+}
+
+.fraseDonaciones {
+    margin: 50px auto;
+    width: 60%;
+    color: #12878B;
+    text-align: center;
+
+    h3 {
+        font-family: "PascuaJoven18";
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: "MandelaScript";
+        font-size: 2rem;
+    }
+}
+
+.thanks {
+    width: 100%;
+    
+    img {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1155px) {
+    
+    .donationsType {
+
+        flex-flow: row wrap;
+
+    }
+    
+}// fin media
+
+@media all and (max-width: 768px) {
+    
+    .donationsType {
+
+        flex-flow: row wrap;
+
+    }
+    
+    .fraseDonaciones {
+        width: 90%;
+    
+    }
+}// fin media

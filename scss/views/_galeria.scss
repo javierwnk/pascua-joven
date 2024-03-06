@@ -1,0 +1,182 @@
+
+
+.galeria {
+
+    width: 100%;
+    padding: 32px 0;    
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        "h2 h2 h2"
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card9";
+        justify-content: center;
+        align-content: center;
+        row-gap: 75px;
+        column-gap: 121px;
+
+        h2 {
+            font-family: "PascuaJoven18";
+            font-size: 4rem;
+            text-align: center;
+            grid-area: h2;
+        }
+
+        .galleryCard {
+            height: 150px;
+            width: 150px;
+            align-self: center;
+            cursor: pointer;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 1px;
+            padding: 14px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    .carrusel {
+        width: 70%;
+        margin: 0 auto;
+        display: none;
+
+        p {
+            color: $secondary;
+            font-weight: 700;
+            width: fit-content;
+        }
+
+        p:hover {
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.semifooter {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 64px 0;
+    background-image: url("../images/galeria/semifooter.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-family: "PascuaJoven18";
+        font-size: 4rem;
+        text-align: center;
+        color: $white;
+    }
+
+    .videos {
+        display: flex;
+        justify-content: space-around;
+        padding: 64px 0;
+
+        iframe {
+            width: 480px;
+            height: 270px;
+        }
+    }
+}
+
+@media all and (max-width: 1027px) {
+    .semifooter {
+        width: 100%;
+        height: 480px;
+        margin: 0 auto;
+    
+        h2 {
+    
+            font-size: 3rem;
+    
+        }
+    
+        .videos {
+    
+            align-items: center;
+    
+    
+            iframe {
+                width: 30%;
+                height: 200px;
+            }
+        }
+    }
+} // fin media
+
+@media all and (max-width: 582px) {
+
+
+.galeria {
+ 
+
+    .content {
+        display: grid;
+        grid-template-areas: 
+        "h2 h2"
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "card9 card10";
+        row-gap: 50px;
+        column-gap: 50px;
+
+        h2 {
+            font-family: "PascuaJoven18";
+            font-size: 2.5rem;
+            text-align: center;
+            grid-area: h2;
+        }
+
+        .galleryCard {
+            height: 120px;
+            width: 120px;
+        }
+
+
+    }
+
+    .carrusel {
+        width: 90%;
+    }
+    
+}
+
+.semifooter {
+    width: 100%;
+    height: 880px;
+    margin: 0 auto;
+
+    h2 {
+
+        font-size: 3rem;
+
+    }
+
+    .videos {
+
+        flex-flow: column wrap;
+        align-items: center;
+        row-gap: 12px;
+
+
+        iframe {
+            width: 90%;
+            height: 200px;
+        }
+    }
+}
+
+} // fin media
+

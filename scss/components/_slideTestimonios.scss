@@ -1,0 +1,25 @@
+.splide__slide {
+    display: flex;
+    justify-content: space-between;
+
+    .splide__image img {
+        max-width: 400px;
+        margin-left: 12px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px #a7a7a7;;
+    }
+
+    .splide__text {
+        display: flex;
+        flex-flow: column;
+        margin-left: 40px;
+
+        p:first-child {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.splide__arrow {
+    background: transparent;
+}

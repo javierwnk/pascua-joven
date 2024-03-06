@@ -1,0 +1,59 @@
+.warningIncripciones {
+    margin: 60px auto 0 auto;
+
+    h2 {
+        font-family: "PascuaJoven18";
+        text-align: center;
+    }
+
+    .warningInfo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        column-gap: 12px;
+        row-gap: 12px;
+
+        img {
+            width: 48%;
+        }
+    }
+}
+
+#warningIndex {
+    margin: 0 auto 24px auto;
+    width: 80%;
+
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #warningIndex {
+        width: 90%;
+        h2 {
+            font-size: 42px;
+        }
+        
+    }
+}
+
+@media all and (max-width: 582px) {
+    .warningIncripciones {
+        .warningInfo {
+            column-gap: 0px;
+            row-gap: 12px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+    #warningIndex {
+        width: 90%;
+        h2 {
+            font-size: 42px;
+        }
+        
+    }
+}

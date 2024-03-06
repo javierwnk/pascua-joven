@@ -1,0 +1,72 @@
+header {
+    width: 100%;
+    background: $white;
+
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        
+        ul {
+
+            li {
+
+                margin: 0 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $primary !important;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    transition: all 0.5s;
+                }
+                
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                .inscripcionesHeader {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media all and (min-width: 992px) {
+        #navbarNav {
+            display: flex;
+            justify-content: flex-end;
+        }
+}
+
+@media all and (max-width: 1144px) {
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1091px) {
+    header {
+        nav {
+            ul {
+                li {
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+}

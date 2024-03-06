@@ -1,0 +1,97 @@
+
+.inscripciones {
+
+    width: 100%;
+    padding: 32px 0;
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            font-family: "PascuaJoven18";
+            font-size: 3.12rem;
+        }
+
+        p {
+            color: #1F3031;
+            text-align: justify;
+        }
+
+        .opcionesInscripcion {
+            height: fit-content;
+            padding: 40px 0 0 0px;
+            display: flex;
+            flex-flow: row wrap;
+            row-gap: 50px;
+            justify-content: space-around;
+        
+            .circleCard {
+        
+                width: 360px;
+                height: fit-content;
+                text-align: center;
+    
+                div.imagenCard {
+                    width: 250px;
+                    height: 140px;
+                    margin: 0 auto;
+                    img {
+                        max-width: 250px;
+                        max-height: 140px;
+                    }
+                }
+
+                div.textoCard {
+                    height: 120px;
+                }        
+        
+                p.tituloInscripcion {
+                    margin: 20px 0 0 0;
+                    font-family: "PascuaJoven18";
+                    font-size: 1.7rem;
+                    text-align: center;
+                    font-weight: 700;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1rem;
+                    margin-top: 5px;
+                }
+
+        
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    width: 90%;
+                    height: 40px;
+                    margin: 0 auto;
+                    background-color: $secondary;
+                    color: $black;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    line-height: 0;
+                }
+        
+        
+            }
+        
+        
+        }
+    
+
+    }
+
+    
+}
+
+.subfooter {
+    width: 100%;
+
+    img {
+        width: 100%
+    };
+}

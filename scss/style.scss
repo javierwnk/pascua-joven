@@ -1,0 +1,55 @@
+// Font 
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+@font-face {
+    font-family: "PascuaJoven18";
+
+    src: url('../images/fonts/PascuaJoven18.woff2') format('woff2'),
+        url('../images/fonts/PascuaJoven18.woff') format('woff'), 
+        url('../images/fonts/PascuaJoven18.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "MandelaScript";
+
+    src: url('../images/fonts/MandelaScriptPersonalUse.woff2') format('woff2'),
+        url('../images/fonts/MandelaScriptPersonalUse.woff') format('woff'), 
+        url('../images/fonts/MandelaScriptPersonalUse.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+// Base
+@import "base/reset";
+
+// Utilities
+@import "utilities/mixins";
+@import "utilities/colors";
+
+// Components 
+@import "components/buttons";
+@import "components/slideTestimonios";
+@import "components/warning";
+
+// Layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/content";
+
+
+// Views 
+
+@import "views/index";
+@import "views/nosotros";
+@import "views/donaciones";
+@import "views/faq";
+@import "views/contacto";
+@import "views/recursos";
+@import "views/galeria";
+@import "views/inscripciones";
+@import "views/gracias";
+@import "views/oraciones";
