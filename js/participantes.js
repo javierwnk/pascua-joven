@@ -313,10 +313,7 @@ let escuelas = [{ nombreColegio: "Adveniat",
     { nombreColegio: "San Jose de Moron Sur (Felix Burgos)",
     link: "https://forms.gle/Yax1zdqDPhKxaU487"
     },
-    
-    { nombreColegio: "San Judas Tadeo",
-    link: "https://forms.gle/m7XQXWPCJRGYSCoG8"
-    },
+
     
     { nombreColegio: "Santa Ethnea",
     link: "https://forms.gle/zpPcmXp6ivsDR5YFA"
