@@ -35,7 +35,7 @@ let inscripcionesOpciones2 = [{
 }]
 
 // Variable que setea el tiempo que debe habilitarse la inscripción
-var countDown3 = new Date("Mar 8, 2024 00:00:00").getTime();
+var countDown3 = new Date("Mar 21, 2024 19:00:00").getTime();
 
 // Get today's date and time
 var now = new Date().getTime();
@@ -55,7 +55,7 @@ window.onload = function () {
             <p>${opcion.explicacion} </p>
         </div>`
 
-    if(distance3 > 0) { // Cambiar por un mayor cuando inicien inscripciones
+    if(distance3 < 0) { // Cambiar por un mayor cuando inicien inscripciones
         html += `<a href="#" style="background: lightgrey;">Próximamente</a>
         </div>`
     } else {

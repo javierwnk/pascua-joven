@@ -186,10 +186,6 @@ let escuelas = [{ nombreColegio: "Adveniat",
     link: "https://forms.gle/9dgU7dNeVDbU3h478"
     },
     
-    { nombreColegio: "Parroquia Sagrado Corazon de Jesus Hurlingham",
-    link: "https://forms.gle/Xye1JvMPvhCemgAX7"
-    },
-    
     { nombreColegio: "Parroquia San Carlos Borromeo",
     link: "https://forms.gle/daxTb1Nd1ZrUE1e37"
     },

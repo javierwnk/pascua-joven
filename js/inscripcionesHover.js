@@ -32,7 +32,7 @@ let inscripcionesOpciones = [{
 }]
 
 // Variable que setea el tiempo que debe habilitarse la inscripción
-var countDown2 = new Date("Mar 8, 2024 00:00:00").getTime();
+var countDown2 = new Date("Mar 21, 2024 19:00:00").getTime();
 
 // Get today's date and time
 var now = new Date().getTime();
@@ -54,7 +54,7 @@ $(document).ready(function () {
             <p>${opcion.explicacion}</p>
         </div>`
 
-    if(distance2 > 0) { // cambiar luego por un menor para cuando inicien inscripciones
+    if(distance2 < 0) { // cambiar luego por un menor para cuando inicien inscripciones
         html += `<button disabled>Próximamente</button>
         </div>`
     } else {
