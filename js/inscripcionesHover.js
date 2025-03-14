@@ -1,15 +1,15 @@
 let inscripcionesOpciones = [{
     name: "participantes",
     imagen: "fg_participante.png",
-    link: "./participantes.html",
+    link: "https://forms.gle/FQBe4osQhkH5Vgq77",
     titulo: "PARTICIPANTE",
     explicacion: "Pueden ser participantes aquellos jóvenes que estén cursando sus últimos dos años de colegio: 5to y 6to año de secundaria.",
-    target: "_self"
+    target: "_blank"
 },
 {
     name: "coordinador",
     imagen: "fg_coordi.png",
-    link: "https://forms.gle/UPSvCkL8Hi7DxMvv9",
+    link: "https://forms.gle/4aB1K4vmXbxGT89M8",
     titulo: "COORDINADOR",
     explicacion: "Pueden ser coordinadores de grupo aquellos jóvenes ya egresados que tengan entre 18 y 21 años. ",
     target: "_blank"
@@ -17,7 +17,7 @@ let inscripcionesOpciones = [{
 {
     name: "servidor",
     imagen: "fg_servidor.png",
-    link: "https://forms.gle/mcsraCsfHamBVZS28",
+    link: " https://forms.gle/XneuwJdzYn5P2Exz8",
     titulo: "SERVIDOR",
     explicacion: "Pueden ser servidores aquellos jóvenes ya egresados que tengan más de 21 años. ",
     target: "_blank"
@@ -25,14 +25,15 @@ let inscripcionesOpciones = [{
 {
     name: "acompanante",
     imagen: "fg_acompanante.png",
-    link: "https://forms.gle/9yuH2vd7qTFHizom8",
+    link: "https://forms.gle/7GBWDnrapqVqq2rTA",
     titulo: "ACOMPAÑANTE",
     explicacion: "Serán acompañantes los adultos responsables designados por cada colegio y parroquia para acompañar al grupo de jóvenes correspondiente. ",
     target: "_blank"
 }]
 
+
 // Variable que setea el tiempo que debe habilitarse la inscripción
-var countDown2 = new Date("Mar 21, 2024 19:00:00").getTime();
+var countDown2 = new Date("Mar 18, 2025 12:00:00").getTime();
 
 // Get today's date and time
 var now = new Date().getTime();
@@ -54,7 +55,7 @@ $(document).ready(function () {
             <p>${opcion.explicacion}</p>
         </div>`
 
-    if(distance2 < 0) { // cambiar luego por un menor para cuando inicien inscripciones
+    if(distance2 > 0) { // cambiar luego por un menor para cuando inicien inscripciones
         html += `<button disabled>Próximamente</button>
         </div>`
     } else {
