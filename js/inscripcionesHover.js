@@ -55,7 +55,7 @@ $(document).ready(function () {
             <p>${opcion.explicacion}</p>
         </div>`
 
-    if(distance2 > 0) { // cambiar luego por un menor para cuando inicien inscripciones
+    if(distance2 < 0) { // cambiar luego por un menor para cuando inicien inscripciones
         html += `<button disabled>Próximamente</button>
         </div>`
     } else {

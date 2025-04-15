@@ -52,7 +52,7 @@ window.onload = function () {
             <p>${opcion.explicacion} </p>
         </div>`
 
-    if(distance3 > 0) { // Cambiar por un mayor cuando inicien inscripciones
+    if(distance3 < 0) { // Cambiar por un mayor cuando inicien inscripciones
         html += `<a href="#" style="background: lightgrey;">Próximamente</a>
         </div>`
     } else {
